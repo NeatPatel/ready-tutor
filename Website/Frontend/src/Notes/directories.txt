@@ -1,0 +1,10 @@
+Website path directories:
+
+Home: /
+Book Appointment: /contact-us
+About Us: /about
+Team: /team
+Pricing: /pricing
+Careers: /careers
+Privacy Policy: /privacy-policy
+Terms & Conditions: /terms-and-conditions
