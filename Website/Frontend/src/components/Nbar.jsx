@@ -1,7 +1,7 @@
 import styles from './navbar.module.scss';
 import { Link, Outlet } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import Footer from './Footer.jsx';
 
 function Nbar() {
@@ -13,10 +13,10 @@ function Nbar() {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="mainNavPanel" />
                 <Navbar.Collapse className="text-end" id="mainNavPanel">
-                    <Nav className="ms-auto" navbarScroll>
+                    <Nav className="ms-auto align-items-center" navbarScroll>
                         <Link to="/about" className="nav-link">About</Link>
                         <Link to="/pricing" className="nav-link">Pricing</Link>
-                        <Link to="/contact-us" className="nav-link">Book Appointment</Link>
+                        <Link to="/contact-us" className="nav-link"><Button variant="outline-info">Book Appointment</Button></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

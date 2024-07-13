@@ -1,9 +1,5 @@
-body {
-    background-color: #001719 !important;
-}
-
-$theme-colors: (
-    "dark": #001719
-);
-
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    background-color: $dark !important;
+}

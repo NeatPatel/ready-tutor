@@ -6,7 +6,7 @@ import { Navbar, Card, ListGroup, Col, Row } from 'react-bootstrap';
 function Footer() {
     return (<>
         <div className="mb-5" />
-        <Card className={"position-relative mt-auto bg-dark"}>
+        <Card className={"position-relative mt-auto bg-dark border-0"}>
             <ListGroup>
                 <Card.Header className="ps-4 py-4">
                     <Row>

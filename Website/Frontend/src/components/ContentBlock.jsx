@@ -10,8 +10,8 @@ props.mb - margin bottom of block
 function ContentBlock(props) {
     return (<>
         <Container>
-            <Row style={{marginTop: `${props.mt}svh`, marginBottom: `${props.mb}svh`}} className={styles.contentRow + " text-center mx-auto border"}>
-                <Col className="border">
+            <Row style={{marginTop: `${props.mt}svh`, marginBottom: `${props.mb}svh`}} className="text-center mx-auto">
+                <Col>
                     {props.content}
                 </Col>
             </Row>
