@@ -1,9 +1,11 @@
 import styles from './termsconditions.module.scss';
+import { Card } from 'react-bootstrap';
 
 function TermsConditions(){
     return (<>
+        <Card className= {styles.termsCard + ' w-50 mx-auto mt-3'}>
         <h1 className='text-dark text-center container pd-2'>Terms and Conditions</h1>
-        <div className='text-secondary text-center'><p>Welcome to Ready Tutor!</p>
+        <div className='text-secondary'><p>Welcome to Ready Tutor!</p>
 
             <p>These terms and conditions outline the rules and regulations for the use of Ready Tutor's Website, located at https://ready-tutor.com.</p>
 
@@ -119,7 +121,9 @@ function TermsConditions(){
 
             <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
 
-            <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p></div>
+            <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+            </div>
+            </Card>
     </>);
 }
 
