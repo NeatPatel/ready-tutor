@@ -8,6 +8,7 @@ import Pricing from './pages/Pricing.jsx';
 import MeetTheTeam from './pages/MeetTheTeam.jsx';
 import Careers from './pages/Careers.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import Home from './pages/Home.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
+            <Route index element={<Home />} />
             <Route path="contact-us" element={<ContactUs />} />
             <Route path="about" element={<About />} />
             <Route path="team" element={<MeetTheTeam />} />
