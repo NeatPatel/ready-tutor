@@ -4,6 +4,7 @@ import SplitContentBlock from '../components/SplitContentBlock.jsx';
 import {Link} from 'react-router-dom';
 import waggImg from '../assets/wagg.jpg';
 import ContentBlock from '../components/ContentBlock.jsx';
+import TripleBlock from '../components/TripleBlock.jsx';
 
 function About() {
     return (<>
