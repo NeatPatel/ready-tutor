@@ -2,7 +2,7 @@ import styles from './contactus.module.scss';
 
 function ContactUs() {
     return (<>
-        <h1>Contact Us</h1>
+        <h1 className= 'display-1 text-light'>Contact Us</h1>
     </>);
 }
 

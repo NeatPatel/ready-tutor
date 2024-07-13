@@ -1,10 +1,12 @@
+import ContentBlock from '../components/ContentBlock';
 import styles from './termsconditions.module.scss';
 import { Card } from 'react-bootstrap';
 
 function TermsConditions(){
     return (<>
+        <ContentBlock mt='20' mb='25' content={
         <Card className= {styles.termsCard + ' w-50 mx-auto mt-3 p-3 bg-dark'}>
-        <h1 className='text-light text-center container pd-2'>Terms and Conditions</h1>
+        <h1 className='text-light text-center container pd-2 display-2'>Terms and Conditions</h1>
         <div className='text-light'><p>Welcome to Ready Tutor!</p>
 
             <p>These terms and conditions outline the rules and regulations for the use of Ready Tutor's Website, located at https://ready-tutor.com.</p>
@@ -124,6 +126,7 @@ function TermsConditions(){
             <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
             </div>
             </Card>
+        }/>
     </>);
 }
 
