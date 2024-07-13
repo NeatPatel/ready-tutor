@@ -6,9 +6,11 @@ props.left is all content displayed on the left column of the block
 props.middle is all content displayed in the middle column of the block
 props.right is all content displayed on the right column of the block
 additional modifiers and formatting can be applied to content within prop
+props.mt is top margin in svh
+props.mb is bottom margin in svh
 
 EXAMPLE:
-<SplitContentBlock left={<h2 className= 'text-center'>Why Wait? Get a Free Consultation Today!</h2>} middle={<h1>I'm not a button!</h1>} right={<img src= {waggImg} height='auto' width='500svh' className="" />}/>
+<TripleBlock left={<h2 className= 'text-center'>Why Wait? Get a Free Consultation Today!</h2>} middle={<h1>I'm not a button!</h1>} right={<img src= {waggImg} height='auto' width='500svh' className="" />}/>
 */
 
 function TripleBlock(props){

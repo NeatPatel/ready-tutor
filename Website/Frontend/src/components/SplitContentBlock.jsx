@@ -5,6 +5,8 @@ import {Row, Col, Container} from 'react-bootstrap';
 props.left is all content displayed on the left half/column of the block
 props.right is all content displayed on the right half/column of the block
 additional modifiers and formatting can be applied to content within prop
+props.mt is top margin in svh
+props.mb is bottom margin in svh
 
 EXAMPLE:
 <SplitContentBlock left={<h2 className= 'text-center'>Why Wait? Get a Free Consultation Today!</h2>} right={<img src= {waggImg} height='auto' width='500svh' className="" />}/>
