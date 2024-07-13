@@ -8,7 +8,7 @@ function Pricing() {
     return (<>
         <ContentBlock mt='25' content={<h1 className='display-1 text-light'>Pricing</h1>}/>
         <ContentBlock mt='5' content={<h2 className='text-light'>We offer flexible options for you to choose from</h2>}/>
-        <TripleBlock mt='10' 
+        <TripleBlock mt='20'
             left={<>
                 <p className='border-top mb-5'></p>
                 <p className='text-light'>Free Group Hour</p>
@@ -74,7 +74,7 @@ function Pricing() {
             <p className='border-top border-secondary'></p>
             <p className='mt-3 text-light'>Referring a friend to this program gets you a $100 discount!</p>
         </>}/>
-        <ContentBlock mt='3' content={<>
+        <ContentBlock mt='30' mb='50' content={<>
             <h1 className='text-light mb-4'>Contact us today to get started!</h1>
             <Link to='/contact-us'><Button variant="outline-info" size="lg">Sign Up</Button></Link>
         </>}/>

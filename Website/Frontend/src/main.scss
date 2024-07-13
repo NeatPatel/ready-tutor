@@ -3,3 +3,11 @@
 body {
     background-color: $dark !important;
 }
+
+a:hover {
+    scale: 1.05;
+}
+
+button:hover {
+    scale: 1.05;
+}

@@ -1,9 +1,16 @@
 import styles from './footer.module.scss';
 import logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Card, ListGroup, Col, Row } from 'react-bootstrap';
 
 function Footer() {
+    const pathName = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathName]);
+
     return (<>
         <div className="mb-5" />
         <Card className={"position-relative mt-auto bg-dark border-0"}>
