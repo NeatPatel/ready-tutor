@@ -1,5 +1,5 @@
 import styles from './splitcontentblock.module.scss';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 
 /*
 props.left is all content displayed on the left half/column of the block
@@ -12,10 +12,12 @@ EXAMPLE:
 
 function SplitContentBlock(props){
     return(<>
-        <Row className= 'w-75 mx-auto' style={{marginTop: `${props.mt}svh`, marginBottom: `${props.mb}svh`}}>
-            <Col className="m-auto px-auto w-100">{props.left}</Col>
-            <Col className="m-auto px-auto w-100">{props.right}</Col>
+    <Container className='d-flex' fluid>
+        <Row className= 'w-75 text-center mx-auto' style={{marginTop: `${props.mt}svh`, marginBottom: `${props.mb}svh`}}>
+            <Col className="m-auto">{props.left}</Col>
+            <Col className="m-auto">{props.right}</Col>
         </Row>
+    </Container>
     </>)
 }
 export default SplitContentBlock;
