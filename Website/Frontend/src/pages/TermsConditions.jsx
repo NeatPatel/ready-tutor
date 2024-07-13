@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 function TermsConditions(){
     return (<>
-        <Card className= {styles.termsCard + ' w-50 mx-auto mt-3'}>
+        <Card className= {styles.termsCard + ' w-50 mx-auto mt-3 p-3'}>
         <h1 className='text-dark text-center container pd-2'>Terms and Conditions</h1>
         <div className='text-secondary'><p>Welcome to Ready Tutor!</p>
 
