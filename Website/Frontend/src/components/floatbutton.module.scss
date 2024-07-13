@@ -1,0 +1,11 @@
+.floatButtonAnimation {
+    animation-name: floatAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes floatAnimation {
+    10% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}

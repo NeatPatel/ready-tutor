@@ -1,5 +1,9 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+
+import FloatButton from './components/FloatButton.jsx';
 import { Nbar as Navbar } from './components/Nbar.jsx';
+
 import NotFound from './pages/NotFound.jsx';
 import TermsConditions from './pages/TermsConditions.jsx';
 import ContactUs from './pages/ContactUs.jsx';
@@ -28,6 +32,11 @@ function App() {
           </Route>
         </Routes>
       </HashRouter>
+
+      <FloatButton content={<>
+        <p className="text-end text-light">Read our partner's blog!</p>
+        <Button variant="outline-info">Partner Blog</Button>
+      </>} />
     </>
   )
 }
