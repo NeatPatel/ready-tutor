@@ -84,10 +84,17 @@ function Home() {
         </>} />
 
         <ContentBlock mt="0" mb="50" content={<>
-            <h3 className="text-light">“Tutoring with Ready Tutor is an amazing challenging experience<br/>
-            that I get to use to help students <span className="text-info">unlock their potential</span>”</h3>
+            <h3 className="text-light"><i>“Tutoring with Ready Tutor is an amazing challenging experience<br/>
+            that I get to use to help students <span className="text-info">unlock their potential</span>”</i></h3>
             <Image className="mt-5 mb-3" src={jason_face} height="60vh" width="60vh" fluid roundedCircle />
             <p className="text-light">Jason<br/>Tutor, Ready Tutor</p>
+        </>} />
+
+        <ContentBlock mt="0" mb="50" content={<>
+            <h1 className="display-2 text-light">Join Us Today</h1>
+            <p className="text-light">We Provide a Free Consultation to answer all your questions,<br/>
+            or get started with a FREE group session!</p>
+            <Link to="/contact-us"><Button variant="outline-info">Sign Up</Button></Link>
         </>} />
     </>);
 }
