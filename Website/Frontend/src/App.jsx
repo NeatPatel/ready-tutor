@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 
 import FloatButton from './components/FloatButton.jsx';
@@ -35,7 +35,7 @@ function App() {
 
       <FloatButton content={<>
         <p className="text-end text-light">Read our partner's blog!</p>
-        <Button variant="outline-info">Partner Blog</Button>
+        <a target="_blank" href="https://www.modd.io/blog/introducing-partnership-with-readytutor/"><Button variant="outline-info">Partner Blog</Button></a>
       </>} />
     </>
   )
