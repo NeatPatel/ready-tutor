@@ -10,7 +10,7 @@ function ContactUs() {
     const { pathName } = useLocation();
 
     return (<>
-        <ContentBlock mt='25' mb='0' content={<><h1 className= 'm-auto display-1 text-light'>Contact Us</h1><br/><p className='text-center text-light'>Thank you for your interest in Ready Tutor! We have <span className="text-info">multiple options</span> for you to choose from for contact:</p></>}/>
+        <ContentBlock mt='25' mb='0' content={<><h1 className= 'm-auto display-1 text-light'>Contact Us</h1><br/><p className='text-center text-light'>Thank you for your interest in Ready Tutor! We have <span className="text-info">multiple options below</span> for you to choose from for contact:</p></>}/>
 
         <ContentBlock mt="0" mb="0" content={<>
             <p className="text-light">Calendly not showing up? <a href="https://calendly.com/neetp287">Try this link instead</a></p>

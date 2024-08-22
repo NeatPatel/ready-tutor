@@ -11,8 +11,8 @@ function Pricing() {
         <TripleBlock mt='20'
             left={<>
                 <p className='border-top mb-5'></p>
-                <p className='text-light'>Free Group Hour</p>
-                <h1 className='mt-2 mb-5 text-light display-6'>$0/1 hour</h1>
+                <p className='text-light'>First Group Hour</p>
+                <h1 className='mt-2 mb-5 text-light display-6'>FREE</h1>
                 <p className='mt-5 mb-3 text-light'>Come with a group of 2 or more people for help in your subject matter today, getting the first hour FREE!</p>
                 <p className='border-top border-secondary'></p>
                 <p className='mt-3 text-light'>Referring one-on-one friends gets you another free group hour!</p>
