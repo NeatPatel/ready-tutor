@@ -33,10 +33,10 @@ function App() {
         </Routes>
       </HashRouter>
 
-      <FloatButton content={<>
-        <p className="text-end text-light">Read our partner's blog!</p>
-        <a target="_blank" href="https://www.modd.io/blog/introducing-partnership-with-readytutor/"><Button variant="outline-info">Partner Blog</Button></a>
-      </>} />
+      {/*<FloatButton content={<>
+        <p className="text-end text-dark">Read our partner's blog!</p>
+        <a target="_blank" href="https://www.modd.io/blog/introducing-partnership-with-readytutor/"><Button variant="outline-danger">Partner Blog</Button></a>
+      </>} />*/}
     </>
   )
 }
