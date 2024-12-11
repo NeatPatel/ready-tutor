@@ -1,5 +1,5 @@
 import styles from './footer.module.scss';
-import logo from '../assets/logo.png';
+import logo from '../assets/oglogo.png';
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Card, ListGroup, Col, Row } from 'react-bootstrap';
@@ -18,7 +18,7 @@ function Footer() {
                 <Card.Header className="ps-4 py-4">
                     <Row>
                         <Col className="col-6">
-                            <Link to="/" className="text-decoration-none text-dark"><img src={logo} height="50vh" width="50vh" className="mb-2" /></Link><br />
+                            <Link to="/" className="text-decoration-none text-dark d-inline-block"><img src={logo} height="50vh" className="mb-2" /></Link><br />
                             <Link to="/" className="text-decoration-none text-dark"><h4>Ready Tutor</h4></Link>
                             <p className="text-dark">Our tutors are ready!</p>
                         </Col>
