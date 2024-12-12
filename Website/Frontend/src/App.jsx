@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 
 import FloatButton from './components/FloatButton.jsx';
@@ -17,7 +17,7 @@ import Home from './pages/Home.jsx';
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route index element={<Home />} />
@@ -31,7 +31,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
 
       {/*<FloatButton content={<>
         <p className="text-end text-dark">Read our partner's blog!</p>
