@@ -28,6 +28,7 @@ function App() {
             <Route path="careers" element={<Careers />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="terms-and-conditions" element={<TermsConditions />} />
+            <Route path="not-found" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

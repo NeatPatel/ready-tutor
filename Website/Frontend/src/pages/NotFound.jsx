@@ -5,8 +5,8 @@ import { Button } from 'react-bootstrap';
 
 function NotFound() {
     return (<>
-        <ContentBlock mt="25" mb="5" content={<h1 className="display-2 text-light">Error 404: Page Not Found</h1>} />
-        <ContentBlock mt="0" mb="50" content={<Link to="/"><Button variant="outline-info">Back to Home</Button></Link>} />
+        <ContentBlock mt="25" mb="5" content={<h1 className="display-2 text-dark">Error 404: Page Not Found</h1>} />
+        <ContentBlock mt="0" mb="50" content={<Link to="/"><Button variant="outline-danger">Back to Home</Button></Link>} />
     </>);
 }
 
