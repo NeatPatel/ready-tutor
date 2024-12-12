@@ -25,7 +25,7 @@ function Footer() {
                         <Col>
                             <h4 className="text-dark mb-3">About</h4>
                             <Link to="/team/" className="text-decoration-none text-dark"><p>Team</p></Link>
-                            <Link to="/about" className="text-decoration-none text-dark"><p>History</p></Link>
+                            <Link to="/about" className="text-decoration-none text-dark"><p>About Us</p></Link>
                             <Link to="/careers" className="text-decoration-none text-dark"><p>Careers</p></Link>
                         </Col>
                         <Col>
