@@ -29,6 +29,8 @@ function Nbar() {
                     <Nav className="ms-auto d-inline" navbarScroll>
                         <Link to="/about" className="nav-link my-auto d-inline-block">About</Link>
                         <span className="mx-1" />
+                        <Link to="/schools" className="nav-link my-auto d-inline-block">Schools</Link>
+                        <span className="mx-1" />
                         <Link to="/pricing" className="nav-link my-auto d-inline-block">Pricing</Link>
                         <span className="mx-1" />
                         <Link to="/contact-us" className="nav-link d-inline-block"><Button variant="outline-danger">Book Appointment</Button></Link>

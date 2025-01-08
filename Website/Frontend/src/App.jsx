@@ -13,6 +13,8 @@ import MeetTheTeam from './pages/MeetTheTeam.jsx';
 import Careers from './pages/Careers.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import Home from './pages/Home.jsx';
+import Schools from './pages/Schools.jsx';
+import UCI_school from './pages/UCI_school.jsx';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
             <Route path="careers" element={<Careers />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="terms-and-conditions" element={<TermsConditions />} />
+            <Route path="schools" element={<Schools />} />
+            <Route path="uci-school" element={<UCI_school />} />
             <Route path="not-found" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
           </Route>
