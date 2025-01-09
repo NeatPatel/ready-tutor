@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+//import { Button } from 'react-bootstrap';
 
-import FloatButton from './components/FloatButton.jsx';
+//import FloatButton from './components/FloatButton.jsx';
 import { Nbar as Navbar } from './components/Nbar.jsx';
 
 import NotFound from './pages/NotFound.jsx';
@@ -15,6 +15,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import Home from './pages/Home.jsx';
 import Schools from './pages/Schools.jsx';
 import UCI_school from './pages/UCI_school.jsx';
+import FinalReviewSessions from './pages/FinalReviewSessions.jsx';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="schools" element={<Schools />} />
             <Route path="uci-school" element={<UCI_school />} />
             <Route path="not-found" element={<NotFound />} />
+            <Route path="final-exam-sessions" element={<FinalReviewSessions />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
