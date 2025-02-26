@@ -137,7 +137,7 @@ function FinalReviewSessions() {
                 {
                     courseCode: "I&C SCI 33",
                     courseDescription: "Advanced Programming in Python",
-                    finalReviewDate: "March 4th, 2025",
+                    finalReviewDate: "March 5th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
