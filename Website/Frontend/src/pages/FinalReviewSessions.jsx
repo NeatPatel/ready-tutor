@@ -28,63 +28,63 @@ function FinalReviewSessions() {
                 {
                     courseCode: "PHYSICS 7C",
                     courseDescription: "Classical Physics",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 17th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "PHYSICS 7D",
                     courseDescription: "Classical Physics",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 14th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "MATH 2A",
                     courseDescription: "Calculus I",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 7th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "MATH 2B",
                     courseDescription: "Calculus II",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 13th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "I&C SCI 31",
                     courseDescription: "Introduction to Programming",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 10th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "I&C SCI 32",
                     courseDescription: "Programming in Python",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 19th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "I&C SCI 33",
                     courseDescription: "Advanced Programming in Python",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 5th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "I&C SCI 45C",
                     courseDescription: "Programming with C/C++ as a Second Language",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 6th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "I&C SCI 46",
                     courseDescription: "Data Structures",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "March 11th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 }
@@ -130,7 +130,7 @@ function FinalReviewSessions() {
                 {
                     courseCode: "I&C SCI 32",
                     courseDescription: "Programming in Python",
-                    finalReviewDate: "March 12th, 2025",
+                    finalReviewDate: "March 19th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
