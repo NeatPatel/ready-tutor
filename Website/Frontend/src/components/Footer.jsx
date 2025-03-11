@@ -2,7 +2,9 @@ import styles from './footer.module.scss';
 import logo from '../assets/oglogo.png';
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Navbar, Card, ListGroup, Col, Row } from 'react-bootstrap';
+import { Card, ListGroup, Col, Row, Image, Button } from 'react-bootstrap';
+
+import instagram_logo from "../assets/instagram_logo.png";
 
 function Footer() {
     const pathName = useLocation();
@@ -20,7 +22,8 @@ function Footer() {
                         <Col className="col-6">
                             <Link to="/" className="text-decoration-none text-dark d-inline-block"><img src={logo} height="50vh" className="mb-2" /></Link><br />
                             <Link to="/" className="text-decoration-none text-dark"><h4>Ready Tutor</h4></Link>
-                            <p className="text-dark">Our tutors are ready!</p>
+                            <a target="_blank" href="https://www.instagram.com/ready.tutor/"><Image src={instagram_logo} alt="Instagram" width="7%" /></a>
+                            <p>We post Free Materials and Review Content!</p>
                         </Col>
                         <Col>
                             <h4 className="text-dark mb-3">About</h4>
