@@ -14,6 +14,8 @@ function Deals() {
             <p className='mt-5 mb-3 text-dark'>Students can have a hard time preparing for their exams, and want a<br />
             guarantee that they can get the results they want. We are offering this program<br />
             for UC Irvine students to help them pass their exams -- without the stress of losing their time and money!</p>
+            <p className="mt-5 mb-3 text-dark">If students get below a passing grade on their exam (70% default), they <br />
+            get their money 100% back if eligible following these rules below</p>
             <p className='border-top border-secondary'></p>
             <p className='mt-3 text-dark'>Some Rules:</p>
             <ul className="d-inline-block text-start text-dark">
