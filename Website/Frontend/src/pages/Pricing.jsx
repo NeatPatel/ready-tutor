@@ -11,11 +11,11 @@ function Pricing() {
         <TripleBlock mt='20'
             left={<>
                 <p className='border-top mb-5'></p>
-                <p className='text-dark'>First Group Hour</p>
-                <h1 className='mt-2 mb-5 text-dark display-6'>FREE</h1>
-                <p className='mt-5 mb-3 text-dark'>Come with a group of 2 or more people for help in your subject matter today, getting the first hour FREE!</p>
+                <p className='text-dark'><b>Money Back Guarantee</b></p>
+                <h1 className='mt-2 mb-5 text-dark display-6'>$40/hour</h1>
+                <p className='mt-5 mb-3 text-dark'>Pass your exams, or get your money 100% back!</p>
                 <p className='border-top border-secondary'></p>
-                <p className='mt-3 text-dark'>Referring one-on-one friends gets you another free group hour!</p>
+                <p className='mt-3 text-dark'><Link to="/pricing/deals">more information</Link></p>
                 <p className='border-bottom mt-5'></p>
                 </>}
             middle={<>
@@ -31,9 +31,9 @@ function Pricing() {
                 <p className='border-top mb-5'></p>
                 <p className='text-dark'>Group Session</p>
                 <h1 className='mt-2 mb-5 text-dark display-6'>{"<"}$20/hour</h1>
-                <p className='mt-5 mb-3 text-dark'>Come with a group of 2 or more people for help in your subject matter today, getting the first hour FREE!</p>
+                <p className='mt-5 mb-3 text-dark'>Come with a group of 2 or more people for help in your subject matter today!</p>
                 <p className='border-top border-secondary'></p>
-                <p className='text-dark mt-3' style={{marginBottom: `${8}svh`}}>Pay less with larger groups, pay is split!</p>
+                <p className='text-dark mt-3' style={{marginBottom: `${8}svh`}}>The more students, the cheaper the tutoring!</p>
                 <p className='border-bottom mt-4'></p>
                 </>}
         />

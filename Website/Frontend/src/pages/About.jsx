@@ -14,7 +14,7 @@ function About() {
 Why navigate alone? Here at Ready Tutor, we are here to help you out on your academic journey and all problems that you facing, with examples and stories to help you learn and remember everything that you need!
 
 </p>} />
-        <SplitContentBlock mt='35' mb='30' left={<p className= 'text-center m-auto text-dark'>From a High School Physics Club to a K-12 Virtual E-business, our business started as simple private tutoring, where the needs of students that could not understand course content were aided through our efforts.</p>} right={<h1 className= 'text-center m-auto text-dark'>Our Story</h1>} />
+        <SplitContentBlock mt='35' mb='30' left={<p className= 'text-center m-auto text-dark'>From a High School Physics Club to a whole business, Ready Tutor started as simple private tutoring, where the needs of students that could not understand course content were aided through our efforts.</p>} right={<h1 className= 'text-center m-auto text-dark'>Our Story</h1>} />
         <SplitContentBlock mt='30' mb='25' left={<><h2 className= 'text-center m-auto text-dark'>Why Wait?<br/>Get a Free Consultation Today!</h2><br/><Link to='/contact-us'><Button variant="outline-danger">Get Started</Button></Link></>} right={<Image src={waggImg} fluid className='pe-none' />}/>
         </>);
 }

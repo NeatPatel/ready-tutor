@@ -12,7 +12,7 @@ function ContactUs() {
             <InlineWidget styles={{height: "100svh", width: "75swh", margin: "auto"}} url="https://calendly.com/neetp287" />
             <hr style={{border: "3px solid #ffffff"}} />
             <p className="text-center text-dark">OR try this:</p>
-            <p className="text-dark">Form not showing up? <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScbnkakgMsgrxi6WXvvhyRI09yvtmidQjLvRjq-X2QzbzqxvQ/viewform?embedded=true">Try this link instead</a></p>
+            <p className="text-dark">Google Form not showing up? <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScbnkakgMsgrxi6WXvvhyRI09yvtmidQjLvRjq-X2QzbzqxvQ/viewform?embedded=true">Try this link instead</a></p>
         </>} />
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbnkakgMsgrxi6WXvvhyRI09yvtmidQjLvRjq-X2QzbzqxvQ/viewform?embedded=true" className="m-auto" width="100%" height="500svh">Loading...</iframe>
     </>);

@@ -17,7 +17,7 @@ function Home() {
         <ContentBlock mt="25" mb="0" content={<h1 className="display-5 text-dark">An educational <span className="text-danger">experience</span><br /> like no other</h1>} />
         
         <ContentBlock mt="0" mb="0" content={<p className="text-dark">
-            Ready Tutor is a virtual educational service for K-12 and college students looking to <br />further their 
+            Ready Tutor is an educational service for UC Irvine students looking to <br />further their 
             educational experience right here, right now.</p>} />
         
         <ContentBlock mt="5" mb="25" content={<Link to="/pricing"><Button variant="outline-danger" size="lg">Get Started</Button></Link>} />
@@ -26,7 +26,7 @@ function Home() {
         
         <ContentBlock mt="35" mb="0" content={<>
             <h2 className="display-4 text-dark">⁕</h2>
-            <h1 className="display-3 text-dark">A <span className="text-danger">virtual army</span> of tutors</h1>
+            <h1 className="display-3 text-dark">An <span className="text-danger">army</span> of tutors</h1>
             <p className="text-dark">Our professional tutoring services range across a wide variety of subjects, <br />from electrodynamical physics to 18th century world history.</p>
         </>} />
         
@@ -44,14 +44,14 @@ function Home() {
             <p className="text-start text-dark">Students working with our tutors will learn to critically think and dissect every aspect of their problems.</p>
         </>} />
 
-        <TripleBlock mt="0" mb="25" left={<>
+        <TripleBlock mt="0" mb="20" left={<>
             <h1 className="text-start text-dark">⁕</h1>
             <h5 className="text-start text-dark mb-3">Consulting</h5>
             <p className="text-start text-dark">We provide a free consultation to all students and parents looking for academic help.</p>
         </>} middle={<>
             <h1 className="text-start text-dark">⁕</h1>
-            <h5 className="text-start text-dark mb-3">FREE Group Hour</h5>
-            <p className="text-start text-dark">We Provide one FREE hour to a group virtual study session, whether it be before a midterm or a final AP Exam Review!</p>
+            <h5 className="text-start text-dark mb-3">Deals and Discounts</h5>
+            <p className="text-start text-dark">We Provide all kinds of discounts for you throughtout the year. <br /> <Link to="pricing/deals">More information</Link></p>
         </>} right={<>
             <h1 className="text-start text-dark">⁕</h1>
             <h5 className="text-start text-dark mb-3">Flexible Scheduling</h5>
@@ -66,24 +66,24 @@ function Home() {
 
         <SplitContentBlock mt="0" mb="10" left={<>
             <h1 className="text-start text-dark">⁕</h1>
-            <h1 className="text-start text-dark">Virtual Tutoring</h1>
+            <h1 className="text-start text-dark">Hybrid Tutoring</h1>
             <ul className="text-start text-dark">
                 <li>Flexible tutoring sessions.</li>
                 <li>Understand course content.</li>
-                <li >Interactive and memorable.</li>
+                <li>Meet in person or virtually.</li>
             </ul>
         </>} right={<>
             <Image src={jack_cover} alt="Cover Image" fluid rounded />
         </>} />
 
-        <SplitContentBlock mt="0" mb="50" left={<>
+        <SplitContentBlock mt="0" mb="40" left={<>
             <Image src={jason_cover} alt="Cover Image" fluid rounded />
         </>} right={<>
             <h1 className="text-end text-dark">⁕</h1>
-            <h1 className="text-end text-dark">Get a FREE<br/>Group Hour today!</h1>
+            <h1 className="text-end text-dark">Get a FREE<br/>Consultation Today!</h1>
         </>} />
 
-        <ContentBlock mt="0" mb="50" content={<>
+        <ContentBlock mt="0" mb="40" content={<>
             <h3 className="text-dark"><i>“Tutoring with Ready Tutor is an amazing challenging experience<br/>
             that I get to use to help students <span className="text-danger">unlock their potential</span>”</i></h3>
             <Image className="mt-5 mb-3" src={jason_face} height="60vh" width="60vh" fluid roundedCircle />
@@ -92,8 +92,7 @@ function Home() {
 
         <ContentBlock mt="0" mb="50" content={<>
             <h1 className="display-2 text-dark">Join Us Today</h1>
-            <p className="text-dark">We Provide a Free Consultation to answer all your questions,<br/>
-            or get started with a FREE group session!</p>
+            <p className="text-dark">We Provide a Free Consultation to answer all your questions!</p>
             <Link to="/contact-us"><Button variant="outline-danger">Sign Up</Button></Link>
         </>} />
     </>);

@@ -9,6 +9,7 @@ import TermsConditions from './pages/TermsConditions.jsx';
 import ContactUs from './pages/ContactUs.jsx';
 import About from './pages/About.jsx';
 import Pricing from './pages/Pricing.jsx';
+import Deals from './pages/Deals.jsx';
 import MeetTheTeam from './pages/MeetTheTeam.jsx';
 import Careers from './pages/Careers.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
@@ -28,6 +29,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="team" element={<MeetTheTeam />} />
             <Route path="pricing" element={<Pricing />} />
+            <Route path="pricing/deals" element={<Deals />} />
             <Route path="careers" element={<Careers />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="terms-and-conditions" element={<TermsConditions />} />

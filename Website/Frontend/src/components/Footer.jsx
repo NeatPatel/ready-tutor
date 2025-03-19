@@ -22,8 +22,8 @@ function Footer() {
                         <Col className="col-6">
                             <Link to="/" className="text-decoration-none text-dark d-inline-block"><img src={logo} height="50vh" className="mb-2" /></Link><br />
                             <Link to="/" className="text-decoration-none text-dark"><h4>Ready Tutor</h4></Link>
-                            <a target="_blank" href="https://www.instagram.com/ready.tutor/"><Image src={instagram_logo} alt="Instagram" width="7%" /></a>
-                            <p>We post Free Materials and Review Content!</p>
+                            <a className="text-decoration-none text-dark" target="_blank" href="https://www.instagram.com/ready.tutor/">Follow Instagram! <img className="pe-none" src={instagram_logo} alt="Instagram" width="7%" />
+                            <p>We post Free Materials and Review Content!</p></a>
                         </Col>
                         <Col>
                             <h4 className="text-dark mb-3">About</h4>
