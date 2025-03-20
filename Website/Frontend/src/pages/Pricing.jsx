@@ -21,10 +21,10 @@ function Pricing() {
             middle={<>
                 <p className='border-top mb-5'></p>
                 <p className='text-dark'>One on One</p>
-                <h1 className='mt-2 mb-5 text-dark display-6'>$25/hour</h1>
+                <h1 className='mt-2 mb-5 text-dark display-6'>$30/hour</h1>
                 <p className='mt-5 mb-3 text-dark'>A personal tutoring session with customized help to optimize your experience!</p>
                 <p className='border-top border-secondary'></p>
-                <p className='mt-3 text-dark'>We provide a flat fee of $25 per hour to help high school or college students alike!</p>
+                <p className='mt-3 text-dark'>We provide a flat fee of $30 per hour to help high school or college students alike!</p>
                 <p className='border-bottom mt-5'></p>
                 </>}
             right={<>
@@ -68,7 +68,7 @@ function Pricing() {
         />
         <ContentBlock content={<>
             <p className='border-top border-dark text-dark'></p>
-            <p className='mt-5 text-dark'>SAT Prep (New)</p>
+            <p className='mt-5 text-dark'>SAT Prep</p>
             <h1 className='text-dark display-6 mt-2 mb-3'>$400</h1>
             <p className='mt-5 mb-3 text-dark'>A 5 week intensive summer program IN PERSON for 2 sessions a week</p>
             <p className='border-top border-secondary'></p>
