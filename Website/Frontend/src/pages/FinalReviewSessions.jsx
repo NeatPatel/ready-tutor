@@ -13,6 +13,7 @@ import { useState, useEffect } from 'react';
         courseCode: the course code (Example: COMPSCI 161),
         courseDescription: brief course description (Example: Data Structures and Algorithms)
         finalReviewDate: final exam review date (Example: August 15th, 2035)
+        finalReviewTime: final exam review time (Example: 5pm - 6pm)
         location: the location of the session (Example: Engineering Lecture Hall)
     }
 */
@@ -95,66 +96,80 @@ function FinalReviewSessions() {
                 {
                     courseCode: "PHYSICS 7C",
                     courseDescription: "Classical Physics",
-                    finalReviewDate: "March 17th, 2025",
-                    finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
                 },
                 {
                     courseCode: "PHYSICS 7D",
                     courseDescription: "Classical Physics",
-                    finalReviewDate: "March 14th, 2025",
-                    finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
                 },
                 {
                     courseCode: "MATH 2A",
                     courseDescription: "Calculus I",
-                    finalReviewDate: "March 7th, 2025",
-                    finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
                 },
                 {
                     courseCode: "MATH 2B",
                     courseDescription: "Calculus II",
-                    finalReviewDate: "March 13th, 2025",
-                    finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
+                },
+                {
+                    courseCode: "MATH 2D",
+                    courseDescription: "Multivariable Calculus I",
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
                 },
                 {
                     courseCode: "I&C SCI 31",
                     courseDescription: "Introduction to Programming",
-                    finalReviewDate: "March 10th, 2025",
-                    finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
                 },
                 {
                     courseCode: "I&C SCI 32",
                     courseDescription: "Programming in Python",
-                    finalReviewDate: "March 19th, 2025",
-                    finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
                 },
                 {
                     courseCode: "I&C SCI 33",
                     courseDescription: "Advanced Programming in Python",
-                    finalReviewDate: "March 5th, 2025",
-                    finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
                 },
                 {
                     courseCode: "I&C SCI 45C",
                     courseDescription: "Programming with C/C++ as a Second Language",
-                    finalReviewDate: "March 6th, 2025",
-                    finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
                 },
                 {
                     courseCode: "I&C SCI 46",
                     courseDescription: "Data Structures",
-                    finalReviewDate: "March 11th, 2025",
+                    finalReviewDate: "TBD",
+                    finalReviewTime: "TBD",
+                    location: "TBD"
+                },
+                {
+                    courseCode: "BIOSCI 99",
+                    courseDescription: "Molecular Biology",
+                    finalReviewDate: "June 6th, 2025",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
-                }
+                },
             ];
         }
 
@@ -166,6 +181,7 @@ function FinalReviewSessions() {
             <h1 className= "m-auto display-1 text-dark">Final Exam Review Sessions</h1>
             <p className= "m-auto text-dark">Below are FREE Final Examination Review Sessions Schedule at the University of California, Irvine (UCI) to be held to help students learn material better. For more information, contact <a href="mailto:readytutor01@gmail.com">readytutor01@gmail.com</a></p>
             <p className="m-auto text-dark mb-2">Register below for fast entrance to the session!</p>
+            <p className="m-auto text-dark mb-2">NOTE: ALL listed courses below WILL BE OFFERED for the current school term</p>
             <Button variant="outline-danger" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview" className="m-auto mb-5 d-inline-block">Register</Button>
         </>}/>
         {finalsInfo != null ? finalsInfo.length == 0 ? <p className="mt-5 text-danger m-auto text-center display-6">No final review sessions for this school yet!</p> : <>
