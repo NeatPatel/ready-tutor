@@ -25,7 +25,7 @@ function FinalReviewSessions() {
         let sessionJSON = [];
 
         if(localStorage.getItem("school") == "university_california_irvine") {
-            sessionJSON = [
+            /*sessionJSON = [
                 {
                     courseCode: "PHYSICS 7C",
                     courseDescription: "Classical Physics",
@@ -89,7 +89,7 @@ function FinalReviewSessions() {
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 }
-            ];
+            ];*/
         } else {
             // Default is University of California, Irvine (UCI)
             sessionJSON = [
@@ -103,16 +103,16 @@ function FinalReviewSessions() {
                 {
                     courseCode: "PHYSICS 7D",
                     courseDescription: "Classical Physics",
-                    finalReviewDate: "TBD",
-                    finalReviewTime: "TBD",
-                    location: "TBD"
+                    finalReviewDate: "May 29th, 2025",
+                    finalReviewTime: "3:30pm - 4:30pm",
+                    location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "MATH 2A",
                     courseDescription: "Calculus I",
-                    finalReviewDate: "TBD",
-                    finalReviewTime: "TBD",
-                    location: "TBD"
+                    finalReviewDate: "June 2nd, 2025",
+                    finalReviewTime: "5pm - 6pm",
+                    location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "MATH 2B",
@@ -124,6 +124,13 @@ function FinalReviewSessions() {
                 {
                     courseCode: "MATH 2D",
                     courseDescription: "Multivariable Calculus I",
+                    finalReviewDate: "May 30th, 2025",
+                    finalReviewTime: "5pm - 6pm",
+                    location: "ANTrepreneur Center"
+                },
+                {
+                    courseCode: "MATH 3A",
+                    courseDescription: "Linear Algebra",
                     finalReviewDate: "TBD",
                     finalReviewTime: "TBD",
                     location: "TBD"
@@ -131,37 +138,37 @@ function FinalReviewSessions() {
                 {
                     courseCode: "I&C SCI 31",
                     courseDescription: "Introduction to Programming",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "TBD",
-                    location: "TBD"
+                    location: "Virtual, link here soon"
                 },
                 {
                     courseCode: "I&C SCI 32",
                     courseDescription: "Programming in Python",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "TBD",
-                    location: "TBD"
+                    location: "Virtual, link here soon"
                 },
                 {
                     courseCode: "I&C SCI 33",
                     courseDescription: "Advanced Programming in Python",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "TBD",
-                    location: "TBD"
+                    location: "Virtual, link here soon"
                 },
                 {
                     courseCode: "I&C SCI 45C",
                     courseDescription: "Programming with C/C++ as a Second Language",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "TBD",
-                    location: "TBD"
+                    location: "Virtual, link here soon"
                 },
                 {
                     courseCode: "I&C SCI 46",
                     courseDescription: "Data Structures",
-                    finalReviewDate: "TBD",
+                    finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "TBD",
-                    location: "TBD"
+                    location: "Virtual, link here soon"
                 },
                 {
                     courseCode: "BIOSCI 99",
