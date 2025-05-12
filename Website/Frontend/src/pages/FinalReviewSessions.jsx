@@ -96,9 +96,9 @@ function FinalReviewSessions() {
                 {
                     courseCode: "PHYSICS 7C",
                     courseDescription: "Classical Physics",
-                    finalReviewDate: "TBD",
-                    finalReviewTime: "TBD",
-                    location: "TBD"
+                    finalReviewDate: "June 3rd, 2025",
+                    finalReviewTime: "5pm - 6pm",
+                    location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "PHYSICS 7D",
