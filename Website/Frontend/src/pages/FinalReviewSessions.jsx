@@ -117,9 +117,9 @@ function FinalReviewSessions() {
                 {
                     courseCode: "MATH 2B",
                     courseDescription: "Calculus II",
-                    finalReviewDate: "TBD",
-                    finalReviewTime: "TBD",
-                    location: "TBD"
+                    finalReviewDate: "June 4th",
+                    finalReviewTime: "5pm - 6pm",
+                    location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "MATH 2D",
@@ -131,9 +131,9 @@ function FinalReviewSessions() {
                 {
                     courseCode: "MATH 3A",
                     courseDescription: "Linear Algebra",
-                    finalReviewDate: "TBD",
-                    finalReviewTime: "TBD",
-                    location: "TBD"
+                    finalReviewDate: "June 9th",
+                    finalReviewTime: "5pm - 6pm",
+                    location: "ANTrepreneur Center"
                 },
                 {
                     courseCode: "I&C SCI 31",
