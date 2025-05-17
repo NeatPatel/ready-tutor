@@ -27,7 +27,7 @@ function Nbar() {
                 <Navbar.Toggle id="navBarIdTogglePiece" aria-controls="mainNavPanel" />
                 <Navbar.Collapse className="text-end" id="mainNavPanel">
                     <Nav className="ms-auto d-inline my-auto" navbarScroll>
-                        <Link to="/summer-programs" className="nav-link my-auto d-inline-block">Summer Programs</Link>
+                        <Link to="/about" className="nav-link my-auto d-inline-block">About{/*Summer Programs*/}</Link>
                         <span className="mx-1" />
                         <Link to="/final-exam-sessions" className="nav-link my-auto d-inline-block">Final Review</Link>
                         <span className="mx-1" />
