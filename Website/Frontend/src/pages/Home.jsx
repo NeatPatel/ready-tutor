@@ -35,7 +35,7 @@ function Home() {
         
         <ContentBlock mt="0" mb="0" content={<p className="text-dark">
             Ready Tutor is an educational service for UC Irvine students. <br /> 
-            We have taught over 250 students and are ready to help you next!</p>} />
+            With over 250 students under our belt, we are ready to help you next!</p>} />
         
         <ContentBlock mt="5" mb="25" content={<Link to="/contact-us"><Button variant="black" size="lg">Get A Tutor</Button></Link>} />
         
