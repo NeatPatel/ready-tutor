@@ -139,7 +139,7 @@ function FinalReviewSessions() {
                     courseCode: "I&C SCI 31",
                     courseDescription: "Introduction to Programming",
                     finalReviewDate: "June 1st, 2025",
-                    finalReviewTime: "TBD",
+                    finalReviewTime: "5pm - 6pm",
                     location: "Virtual, link here soon"
                 },
                 {
@@ -189,7 +189,7 @@ function FinalReviewSessions() {
             <p className= "m-auto text-dark">Below are FREE Final Examination Review Sessions Schedule at the University of California, Irvine (UCI) to be held to help students learn material better. For more information, contact <a href="mailto:readytutor01@gmail.com">readytutor01@gmail.com</a></p>
             <p className="m-auto text-dark mb-2">Register below for fast entrance to the session!</p>
             <p className="m-auto text-dark mb-2">NOTE: ALL listed courses below WILL BE OFFERED for the current school term</p>
-            <Button variant="outline-danger" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview" className="m-auto mb-5 d-inline-block">Register</Button>
+            <Button variant="black" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview" className="m-auto mb-5 d-inline-block">Register</Button>
         </>}/>
         {finalsInfo != null ? finalsInfo.length == 0 ? <p className="mt-5 text-danger m-auto text-center display-6">No final review sessions for this school yet!</p> : <>
             <Table className="m-auto text-center w-75" striped bordered hover variant="secondary">

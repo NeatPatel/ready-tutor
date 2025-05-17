@@ -19,21 +19,21 @@ function Nbar() {
     });
 
     return (<>
-        <Navbar id="mainNavBar" onToggle={toggled} expanded={toggle} variant="light" fixed="top" className="navbar-light bg-light border-primary" expand="lg">
+        <Navbar id="mainNavBar" onToggle={toggled} expanded={toggle} variant="light" fixed="top" className="navbar-light bg-light border-danger" expand="lg">
             <Container className="mx-4" fluid>
                 <Navbar.Brand>
                     <Link to="/" className="nav-link"><img src={logo} height="50vh" className="d-inline-block align-self-center" /></Link>
                 </Navbar.Brand>
                 <Navbar.Toggle id="navBarIdTogglePiece" aria-controls="mainNavPanel" />
                 <Navbar.Collapse className="text-end" id="mainNavPanel">
-                    <Nav className="ms-auto d-inline" navbarScroll>
-                        <Link to="/about" className="nav-link my-auto d-inline-block">About</Link>
+                    <Nav className="ms-auto d-inline my-auto" navbarScroll>
+                        <Link to="/summer-programs" className="nav-link my-auto d-inline-block">Summer Programs</Link>
                         <span className="mx-1" />
                         <Link to="/final-exam-sessions" className="nav-link my-auto d-inline-block">Final Review</Link>
                         <span className="mx-1" />
                         <Link to="/pricing" className="nav-link my-auto d-inline-block">Pricing</Link>
                         <span className="mx-1" />
-                        <Link to="/contact-us" className="nav-link d-inline-block"><Button variant="outline-danger">Book Appointment</Button></Link>
+                        <Link to="/contact-us" className="nav-link d-inline-block"><Button variant="outline-black">Contact Us</Button></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

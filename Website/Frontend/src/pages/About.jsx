@@ -15,7 +15,7 @@ Why navigate alone? Here at Ready Tutor, we are here to help you out on your aca
 
 </p>} />
         <SplitContentBlock mt='35' mb='30' left={<p className= 'text-center m-auto text-dark'>From a High School Physics Club to a whole business, Ready Tutor started as simple private tutoring, where the needs of students that could not understand course content were aided through our efforts.</p>} right={<h1 className= 'text-center m-auto text-dark'>Our Story</h1>} />
-        <SplitContentBlock mt='30' mb='25' left={<><h2 className= 'text-center m-auto text-dark'>Why Wait?<br/>Get a Free Consultation Today!</h2><br/><Link to='/contact-us'><Button variant="outline-danger">Get Started</Button></Link></>} right={<Image src={waggImg} fluid className='pe-none' />}/>
+        <SplitContentBlock mt='30' mb='25' left={<><h2 className= 'text-center m-auto text-dark'>Why Wait?<br/>Get a Free Consultation Today!</h2><br/><Link to='/contact-us'><Button variant="black">Get Started</Button></Link></>} right={<Image src={waggImg} fluid className='pe-none' />}/>
         </>);
 }
 

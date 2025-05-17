@@ -30,7 +30,7 @@ function Deals() {
         </>}/>
         <ContentBlock mt='20' mb='50' content={<>
             <h1 className='text-dark mb-4'>Ready to go? Let's get started!</h1>
-            <Link to='/contact-us'><Button variant="outline-danger" size="lg">Sign Up</Button></Link>
+            <Link to='/contact-us'><Button variant="black" size="lg">Sign Up</Button></Link>
         </>}/>
     </>);
 }

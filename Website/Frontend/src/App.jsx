@@ -17,6 +17,7 @@ import Home from './pages/Home.jsx';
 import Schools from './pages/Schools.jsx';
 import UCI_school from './pages/UCI_school.jsx';
 import FinalReviewSessions from './pages/FinalReviewSessions.jsx';
+//import SummerPrograms from './pages/SummerPrograms.jsx';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             <Route path="uci-school" element={<UCI_school />} />
             <Route path="not-found" element={<NotFound />} />
             <Route path="final-exam-sessions" element={<FinalReviewSessions />} />
+            {/* <Route path="summer-programs" element={<SummerPrograms />} /> */}
+            {/* <Route path="summer-programs/computer-science" element={<SummerPrograms />} /> */}
+            {/* <Route path="summer-programs/pre-medical" element={<SummerPrograms />} /> */}
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
@@ -44,7 +48,7 @@ function App() {
 
       {/*<FloatButton content={<>
         <p className="text-end text-dark">Read our partner's blog!</p>
-        <a target="_blank" href="https://www.modd.io/blog/introducing-partnership-with-readytutor/"><Button variant="outline-danger">Partner Blog</Button></a>
+        <a target="_blank" href="https://www.modd.io/blog/introducing-partnership-with-readytutor/"><Button variant="black">Partner Blog</Button></a>
       </>} />*/}
     </>
   )

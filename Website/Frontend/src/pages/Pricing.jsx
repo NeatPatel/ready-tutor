@@ -11,12 +11,12 @@ function Pricing() {
         <TripleBlock mt='20'
             left={<>
                 <p className='border-top mb-5'></p>
-                <p className='text-dark'><b>Money Back Guarantee</b></p>
-                <h1 className='mt-2 mb-5 text-dark display-6'>$40/hour</h1>
-                <p className='mt-5 mb-3 text-dark'>Pass your exams, or get your money 100% back!</p>
+                <p className='text-dark'>Group Session</p>
+                <h1 className='mt-2 mb-5 text-dark display-6'>{"<"}$20/hour</h1>
+                <p className='mt-5 mb-3 text-dark'>Come with a group of 2 or more people for help in your subject matter today!</p>
                 <p className='border-top border-secondary'></p>
-                <p className='mt-3 text-dark'><Link to="/pricing/deals">more information</Link></p>
-                <p className='border-bottom mt-5'></p>
+                <p className='text-dark mt-3' style={{marginBottom: `${8}svh`}}>The more students, the cheaper the tutoring!</p>
+                <p className='border-bottom mt-4'></p>
                 </>}
             middle={<>
                 <p className='border-top mb-5'></p>
@@ -29,12 +29,12 @@ function Pricing() {
                 </>}
             right={<>
                 <p className='border-top mb-5'></p>
-                <p className='text-dark'>Group Session</p>
-                <h1 className='mt-2 mb-5 text-dark display-6'>{"<"}$20/hour</h1>
-                <p className='mt-5 mb-3 text-dark'>Come with a group of 2 or more people for help in your subject matter today!</p>
+                <p className='text-dark'><b>Money Back Guarantee</b></p>
+                <h1 className='mt-2 mb-5 text-dark display-6'>$40/hour</h1>
+                <p className='mt-5 mb-3 text-dark'>Pass your exams, or get your money 100% back!</p>
                 <p className='border-top border-secondary'></p>
-                <p className='text-dark mt-3' style={{marginBottom: `${8}svh`}}>The more students, the cheaper the tutoring!</p>
-                <p className='border-bottom mt-4'></p>
+                <p className='mt-3 text-dark'><Link to="/pricing/deals">more information</Link></p>
+                <p className='border-bottom mt-5'></p>
                 </>}
         />
         <TripleBlock 
@@ -76,7 +76,7 @@ function Pricing() {
         </>}/>
         <ContentBlock mt='30' mb='50' content={<>
             <h1 className='text-dark mb-4'>Contact us today to get started!</h1>
-            <Link to='/contact-us'><Button variant="outline-danger" size="lg">Sign Up</Button></Link>
+            <Link to='/contact-us'><Button variant="black" size="lg">Sign Up</Button></Link>
         </>}/>
     </>);
 }

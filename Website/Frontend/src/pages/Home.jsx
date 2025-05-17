@@ -1,4 +1,5 @@
 import styles from './home.module.scss';
+import { Typewriter } from 'react-simple-typewriter';
 
 import ContentBlock from '../components/ContentBlock.jsx';
 import SplitContentBlock from '../components/SplitContentBlock.jsx';
@@ -14,13 +15,29 @@ import jason_face from '../assets/jason_face.png';
 
 function Home() {
     return (<>
-        <ContentBlock mt="25" mb="0" content={<h1 className="display-5 text-dark">An educational <span className="text-danger">experience</span><br /> like no other</h1>} />
+        <ContentBlock mt="25" mb="0" content={
+          <h1 className="display-5 text-dark">
+            Is{' '}
+            <span className="text-danger">
+              <Typewriter
+                words={["UC Irvine", "High School", "Physics", "Math", "Chemistry", "College", "History", "English", "Biology"]}
+                loop={0}
+                cursor
+                cursorStyle=""
+                typeSpeed={80}
+                deleteSpeed={50}
+                delaySpeed={2500}
+              />
+            </span>{' '}
+            Kicking Your Butt?
+          </h1>
+        } />
         
         <ContentBlock mt="0" mb="0" content={<p className="text-dark">
             Ready Tutor is an educational service for UC Irvine students. <br /> 
             We have taught over 250 students and are ready to help you next!</p>} />
         
-        <ContentBlock mt="5" mb="25" content={<Link to="/pricing"><Button variant="outline-danger" size="lg">Get Started</Button></Link>} />
+        <ContentBlock mt="5" mb="25" content={<Link to="/contact-us"><Button variant="black" size="lg">Get A Tutor</Button></Link>} />
         
         <ContentBlock mt="35" mb="25" content={<Image src={alex_cover} className="w-75 pe-none" alt="Ready Tutor" fluid rounded />} />
         
@@ -93,7 +110,7 @@ function Home() {
         <ContentBlock mt="0" mb="50" content={<>
             <h1 className="display-2 text-dark">Join Us Today</h1>
             <p className="text-dark">We Provide a Free Consultation to answer all your questions!</p>
-            <Link to="/contact-us"><Button variant="outline-danger">Sign Up</Button></Link>
+            <Link to="/contact-us"><Button variant="black">Sign Up</Button></Link>
         </>} />
     </>);
 }
