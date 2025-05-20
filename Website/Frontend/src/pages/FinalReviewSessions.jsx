@@ -118,7 +118,7 @@ function FinalReviewSessions() {
                     courseCode: "MATH 2B",
                     courseDescription: "Calculus II",
                     finalReviewDate: "June 4th",
-                    finalReviewTime: "5pm - 6pm",
+                    finalReviewTime: "6pm - 7pm",
                     location: "ANTrepreneur Center"
                 },
                 {
