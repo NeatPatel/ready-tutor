@@ -131,7 +131,7 @@ function FinalReviewSessions() {
                 {
                     courseCode: "MATH 3A",
                     courseDescription: "Linear Algebra",
-                    finalReviewDate: "June 9th",
+                    finalReviewDate: "June 5th",
                     finalReviewTime: "5pm - 6pm",
                     location: "ANTrepreneur Center"
                 },
