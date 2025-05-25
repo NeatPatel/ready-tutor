@@ -146,28 +146,28 @@ function FinalReviewSessions() {
                     courseCode: "I&C SCI 32",
                     courseDescription: "Programming in Python",
                     finalReviewDate: "June 1st, 2025",
-                    finalReviewTime: "TBD",
+                    finalReviewTime: "5pm - 6pm",
                     location: "Virtual, link here soon"
                 },
                 {
                     courseCode: "I&C SCI 33",
                     courseDescription: "Advanced Programming in Python",
                     finalReviewDate: "June 1st, 2025",
-                    finalReviewTime: "TBD",
+                    finalReviewTime: "6pm - 7pm",
                     location: "Virtual, link here soon"
                 },
                 {
                     courseCode: "I&C SCI 45C",
                     courseDescription: "Programming with C/C++ as a Second Language",
                     finalReviewDate: "June 1st, 2025",
-                    finalReviewTime: "TBD",
+                    finalReviewTime: "5pm - 6pm",
                     location: "Virtual, link here soon"
                 },
                 {
                     courseCode: "I&C SCI 46",
                     courseDescription: "Data Structures",
                     finalReviewDate: "June 1st, 2025",
-                    finalReviewTime: "TBD",
+                    finalReviewTime: "2pm - 3pm",
                     location: "Virtual, link here soon"
                 },
                 {
