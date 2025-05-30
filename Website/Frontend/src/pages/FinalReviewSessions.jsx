@@ -192,28 +192,30 @@ function FinalReviewSessions() {
             <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview"><button className="btn btn-dark rounded-pill px-4 py-3 m-auto mb-5 d-inline-block">Register</button></a>
         </>}/>
         {finalsInfo != null ? finalsInfo.length == 0 ? <p className="mt-5 text-danger m-auto text-center display-6">No final review sessions for this school yet!</p> : <>
-            <Table className="m-auto text-center w-75" striped bordered hover variant="secondary">
-                <thead>
-                    <tr>
-                        <th>Course Code</th>
-                        <th>Course Description</th>
-                        <th>Final Review Session Date</th>
-                        <th>Final Review Session Time</th>
-                        <th>Location</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {finalsInfo.map((item) => {return(<>
+            <div className="table-responsive">
+                <Table className="m-auto text-center w-75" striped bordered hover variant="secondary">
+                    <thead>
                         <tr>
-                            <td>{item.courseCode}</td>
-                            <td>{item.courseDescription}</td>
-                            <td>{item.finalReviewDate}</td>
-                            <td>{item.finalReviewTime}</td>
-                            <td>{item.location}</td>
+                            <th>Course Code</th>
+                            <th>Course Description</th>
+                            <th>Final Review Session Date</th>
+                            <th>Final Review Session Time</th>
+                            <th>Location</th>
                         </tr>
-                    </>)})}
-                </tbody>
-            </Table>
+                    </thead>
+                    <tbody>
+                        {finalsInfo.map((item) => {return(<>
+                            <tr>
+                                <td>{item.courseCode}</td>
+                                <td>{item.courseDescription}</td>
+                                <td>{item.finalReviewDate}</td>
+                                <td>{item.finalReviewTime}</td>
+                                <td>{item.location}</td>
+                            </tr>
+                        </>)})}
+                    </tbody>
+                </Table>
+            </div>
         </> : <p className="mt-5 text-danger m-auto text-center display-6">No final review sessions for this school yet!</p>}
     </>;
 }

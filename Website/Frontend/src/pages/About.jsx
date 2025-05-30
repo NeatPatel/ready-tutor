@@ -96,7 +96,7 @@ function About() {
                   Join hundreds of students who have already discovered the power of personalized tutoring with Ready Tutor.
                 </p>
                 <Link to='/contact-us'>
-                  <button className="btn btn-dark rounded-pill px-4 py-3">Get Started</button>
+                  <button className="btn btn-dark rounded-pill px-4 py-3 mb-2">Get Started</button>
                 </Link>
               </div>
               <div className="col-md-6">
