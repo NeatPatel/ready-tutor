@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import MathBackground from '../components/MathBackground';
 
 import alex from '../assets/alex.png';
 import jack from '../assets/jack.jpg';
@@ -183,6 +184,11 @@ function Home() {
       <main className="flex-grow-1">
         {/* Hero Section */}
         <section className="py-5" style={{ paddingTop: '6rem', paddingBottom: '8rem', position: 'relative', overflow: 'hidden' }}>
+          {/* Math Background - positioned behind everything */}
+          <div className="position-absolute top-0 start-0 w-100 h-100">
+            <MathBackground />
+          </div>
+
           {/* Subtle highlight behind content */}
           <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style={{ pointerEvents: 'none' }}>
             <div 
@@ -191,7 +197,8 @@ function Home() {
                 maxWidth: '48rem',
                 height: '16rem',
                 background: 'linear-gradient(to bottom, #fef2f2, transparent)',
-                filter: 'blur(48px)'
+                filter: 'blur(48px)',
+                zIndex: 1
               }}
             ></div>
           </div>
@@ -204,13 +211,13 @@ function Home() {
                   Connect with expert tutors who specialize in your specific subjects. Get help with assignments, exam prep,
                   and understanding complex concepts.
                 </p>
-                <Button 
+                <Link to="/contact-us"><Button 
                   size="lg" 
                   className="btn btn-dark rounded-pill px-4 py-3 shadow-lg mb-5"
                   style={{ transition: 'all 0.3s ease' }}
                 >
                   Find a tutor
-                </Button>
+                </Button></Link>
               </div>
             </div>
           </div>
@@ -465,9 +472,9 @@ function Home() {
                         <span>Cheaper as you add more students</span>
                       </li>
                     </ul>
-                    <button className="btn btn-outline-dark w-100 rounded-pill">
+                    <Link to="/contact-us"><button className="btn btn-outline-dark w-100 rounded-pill">
                       Choose plan
-                    </button>
+                    </button></Link>
                   </div>
                 </div>
               </div>
@@ -512,7 +519,7 @@ function Home() {
                         <span>Priority scheduling</span>
                       </li>
                     </ul>
-                    <button className="btn btn-dark w-100 rounded-pill">Choose plan</button>
+                    <Link to="/contact-us"><button className="btn btn-dark w-100 rounded-pill">Choose plan</button></Link>
                   </div>
                 </div>
               </div>
@@ -554,9 +561,9 @@ function Home() {
                         <span><Link to="/pricing/deals">Learn More</Link></span>
                       </li>
                     </ul>
-                    <button className="btn btn-outline-dark w-100 rounded-pill">
+                    <Link to="/contact-us"><button className="btn btn-outline-dark w-100 rounded-pill">
                       Get started
-                    </button>
+                    </button></Link>
                   </div>
                 </div>
               </div>
@@ -612,7 +619,7 @@ function Home() {
               <p className="text-muted mb-4">
                 Find the perfect tutor for your needs and start improving your grades today.
               </p>
-              <button className="btn btn-dark rounded-pill px-4 py-2">Find a tutor</button>
+              <Link to="/contact-us"><button className="btn btn-dark rounded-pill px-4 py-2">Find a tutor</button></Link>
             </div>
           </div>
         </section>

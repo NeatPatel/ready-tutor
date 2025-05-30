@@ -2,7 +2,7 @@ import styles from './summerprograms.module.scss';
 
 import ContentBlock from '../components/ContentBlock.jsx';
 import SplitContentBlock from '../components/SplitContentBlock.jsx';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Col } from 'react-bootstrap';
 
 function SummerPrograms() {
     return (<>
@@ -18,17 +18,17 @@ function SummerPrograms() {
 
         <SplitContentBlock mt='0' mb='10' left={<>
             <Button variant="outline-light">
-                <Card className="px-3">
-                    <p className="m-auto text-dark mt-5 mb-3">Computer Science Readiness Program</p>
-                    <Button variant="black" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview" className="m-auto mb-5 d-inline-block">Learn More</Button>
-                </Card>
+                <h2>Game Developer Bootcamp</h2>
+                <p>A 3 week virtual summer program for students of ALL ages. Students work in groups to develop multiplayer video games</p>
+                <button className="btn btn-dark rounded-pill px-4 py-3 m-auto mb-5 d-inline-block" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview">Learn More</button>
+                <p>FREE!</p>
             </Button>
         </>} right={<>
             <Button variant="outline-light">
-                <Card className="px-3">
-                    <p className="m-auto text-dark mt-5 mb-3">Pre-Medical Readiness Program</p>
-                    <Button variant="black" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview" className="m-auto mb-5 d-inline-block">Learn More</Button>
-                </Card>
+                <h2>Python Summer Bootcamp</h2>
+                <p>Introductory Python course for middle school and high school students! Students work in small groups, and learn to develop their first video games in Python!</p>
+                <button className="btn btn-dark rounded-pill px-4 py-3 m-auto mb-5 d-inline-block" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview">Learn More</button>
+                <p>$400</p>
             </Button>
         </>} />
     </>);

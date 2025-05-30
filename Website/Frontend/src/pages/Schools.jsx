@@ -48,9 +48,9 @@ function Schools() {
                         
                 <ContentBlock mt='5' content={
 
-                        <Button variant="danger" size="lg" type="submit" onClick={handleButtonClick}>
-                                Continue
-                        </Button>
+                        <button className="btn btn-danger rounded-pill px-4 py-3" type="submit" onClick={handleButtonClick}>
+                                Go to Ready Tutor Services
+                        </button>
 
                 }/>
                         

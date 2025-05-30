@@ -10,7 +10,7 @@ function FloatButton(props) {
         <Row className={styles.floatButtonAnimation + " pe-none d-flex position-fixed fixed-bottom m-2"}>
             <Col xs={{span: "auto"}} md={{span: "auto"}} lg={{span: "auto"}} className="ms-auto">
                 <Card border="dark" className="bg-light p-2 pe-auto">
-                    <Button variant="black" onClick={() => {setIsActive(!isActive)}} className="align-self-end mb-1">{' '}</Button>
+                    <button className="btn btn-dark rounded-pill p-2 align-self-end mb-1" onClick={() => {setIsActive(!isActive)}}>{' '}</button>
                     {isActive ? <>
                         {props.content}
                     </> : ''}
