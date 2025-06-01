@@ -140,35 +140,35 @@ function FinalReviewSessions() {
                     courseDescription: "Introduction to Programming",
                     finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "5pm - 6pm",
-                    location: "Virtual, link here soon"
+                    location: <a target="_blank" href="https://meet.google.com/fcw-otor-ifq">Virtual, link here soon</a>
                 },
                 {
                     courseCode: "I&C SCI 32",
                     courseDescription: "Programming in Python",
                     finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "5pm - 6pm",
-                    location: "Virtual, link here soon"
+                    location: <a target="_blank" href="https://meet.google.com/aup-spcm-ofi">Virtual, link here soon</a>
                 },
                 {
                     courseCode: "I&C SCI 33",
                     courseDescription: "Advanced Programming in Python",
                     finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "6pm - 7pm",
-                    location: "Virtual, link here soon"
+                    location: <a target="_blank" href="https://meet.google.com/qgx-ccty-apg">Virtual, link here soon</a>
                 },
                 {
                     courseCode: "I&C SCI 45C",
                     courseDescription: "Programming with C/C++ as a Second Language",
                     finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "5pm - 6pm",
-                    location: "Virtual, link here soon"
+                    location: <a target="_blank" href="https://meet.google.com/svo-wqek-peb">Virtual, link here soon</a>
                 },
                 {
                     courseCode: "I&C SCI 46",
                     courseDescription: "Data Structures",
                     finalReviewDate: "June 1st, 2025",
                     finalReviewTime: "2pm - 3pm",
-                    location: "Virtual, link here soon"
+                    location: <a target="_blank" href="https://meet.google.com/qeu-heig-zdh">Virtual, link here soon</a>
                 },
                 {
                     courseCode: "BIOSCI 99",
