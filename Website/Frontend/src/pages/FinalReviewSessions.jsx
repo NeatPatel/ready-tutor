@@ -98,7 +98,7 @@ function FinalReviewSessions() {
                     courseDescription: "Classical Physics",
                     finalReviewDate: "June 3rd, 2025",
                     finalReviewTime: "5pm - 6pm",
-                    location: "ANTrepreneur Center"
+                    location: <a target="_blank" href="https://meet.google.com/wpz-cjiw-wda">Virtual, link here soon</a>
                 },
                 {
                     courseCode: "PHYSICS 7D",
