@@ -56,7 +56,7 @@ function SummerPrograms() {
                             </div>
                             <div className="mt-auto text-center">
                                 <a className="btn btn-dark rounded-pill px-4 py-3 mb-3 fw-bold" href="/summer-programs/computer-science">Learn More</a>
-                                <p className="h4 text-success fw-bold mb-0">$200 per student</p>
+                                <p className="h4 text-success fw-bold mb-0">$275 per student</p>
                             </div>
                         </Card.Body>
                     </Card>
@@ -98,7 +98,7 @@ function SummerPrograms() {
                             </div>
                             <div className="mt-auto text-center">
                                 <a className="btn btn-dark rounded-pill px-4 py-3 mb-3 fw-bold" href="/summer-programs/pre-medical">Learn More</a>
-                                <p className="h4 text-success fw-bold mb-0">$200 per student</p>
+                                <p className="h4 text-success fw-bold mb-0">$275 per student</p>
                             </div>
                         </Card.Body>
                     </Card>

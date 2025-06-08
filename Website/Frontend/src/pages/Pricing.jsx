@@ -94,7 +94,7 @@ function Pricing() {
                       <p className="small text-muted">Summer programming intensive</p>
                     </div>
                     <div className="mb-4">
-                      <span className="display-6 fw-normal">$200</span>
+                      <span className="display-6 fw-normal">$275</span>
                       <span className="text-muted">/student</span>
                     </div>
                     <p className="text-muted mb-3">Comprehensive web development program covering HTML, CSS, JavaScript, React, and modern frameworks</p>
@@ -116,7 +116,7 @@ function Pricing() {
                       <p className="small text-muted">Medical preparation program</p>
                     </div>
                     <div className="mb-4">
-                      <span className="display-6 fw-normal">$200</span>
+                      <span className="display-6 fw-normal">$275</span>
                       <span className="text-muted">/student</span>
                     </div>
                     <p className="text-muted mb-3">Pre-medical timeline preparation with hands-on laboratory experience in Biology, Chemistry, and Organic Chemistry</p>
