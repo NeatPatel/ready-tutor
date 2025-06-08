@@ -3,8 +3,8 @@ import ContentBlock from '../components/ContentBlock.jsx';
 
 // Import images
 import compSci from '../assets/comp-sci.jpg';
-import people2 from '../assets/people2.jpg';
 import people1 from '../assets/people1.jpg';
+import people2 from '../assets/people2.jpg';
 import people4 from '../assets/people4.jpg';
 
 function ComputerScienceProgram() {
@@ -12,16 +12,17 @@ function ComputerScienceProgram() {
         <ContentBlock mt='25' mb='25' content={<>
             <h1 className="display-1 text-center text-dark mb-5">Computer Science Bootcamp</h1>
             
-            {/* Hero Image */}
-            <div className="text-center mb-5">
-                <img src={compSci} alt="Computer Science Technology" className="img-fluid rounded shadow-lg" style={{maxHeight: '400px', width: '100%', objectFit: 'cover'}} />
+            {/* Hero Image - Full width on mobile */}
+            <div className="text-center mb-5 px-2">
+                <img src={compSci} alt="Computer Science Technology" className="img-fluid rounded shadow-lg w-100" style={{maxHeight: '400px', objectFit: 'cover'}} />
             </div>
             
-            <Container>
+            {/* Mobile-responsive container */}
+            <div className="container-fluid px-lg-5 px-md-3 px-2">
                 <Row className="justify-content-center">
                     <Col lg={10}>
                         <Card className="shadow-lg border-0 mb-5">
-                            <Card.Body className="p-5">
+                            <Card.Body className="p-lg-5 p-3">
                                 <Row>
                                     <Col md={8}>
                                         <h2 className="text-dark mb-4 fw-bold">Program Description</h2>
@@ -32,21 +33,21 @@ function ComputerScienceProgram() {
                                             Throughout this intensive program, students will master the fundamentals of web development, including HTML, CSS, and JavaScript, before advancing to modern frameworks like React, Bootstrap, and Vite. They'll also learn essential development practices including version control with Git, team coordination, and project management - skills that are crucial in today's tech industry.
                                         </p>
                                         <p className="text-dark text-start">
-                                            Students will have the unique opportunity to work with LLM-integrated development environments and tackle real-world problems, culminating in a final project showcase at UC Irvine where they'll present their work to peers and instructors.
+                                            Students will have the unique opportunity to work with LLM-integrated development environments and tackle real-world problems, culminating in a final project showcase at UC Irvine where they'll present their work to peers, instructors, and industry professionals.
                                         </p>
                                     </Col>
-                                    <Col md={4}>
-                                        <img src={people2} alt="Students Learning Together" className="img-fluid rounded shadow" style={{height: '250px', width: '100%', objectFit: 'cover'}} />
+                                    <Col md={4} className="mt-3 mt-md-0">
+                                        <img src={people2} alt="Students Learning Together" className="img-fluid rounded shadow w-100" style={{height: '250px', objectFit: 'cover'}} />
                                     </Col>
                                 </Row>
                             </Card.Body>
                         </Card>
 
                         <Card className="shadow-lg border-0 mb-5">
-                            <Card.Body className="p-5">
+                            <Card.Body className="p-lg-5 p-3">
                                 <Row>
-                                    <Col md={4}>
-                                        <img src={people1} alt="Collaborative Learning" className="img-fluid rounded shadow mb-3" style={{height: '200px', width: '100%', objectFit: 'cover'}} />
+                                    <Col md={4} className="mb-3 mb-md-0">
+                                        <img src={people1} alt="Collaborative Learning" className="img-fluid rounded shadow w-100" style={{height: '200px', objectFit: 'cover'}} />
                                     </Col>
                                     <Col md={8}>
                                         <h2 className="text-dark mb-4 fw-bold">Eligibility Requirements</h2>
@@ -69,7 +70,7 @@ function ComputerScienceProgram() {
                                             </li>
                                             <li className="mb-3 d-flex align-items-start text-start">
                                                 <span className="text-success me-3 fw-bold">✓</span>
-                                                <span className="text-start">50% of paid price is returned if program is completed (i.e. if student completes showcase)</span>
+                                                <span className="text-start">Program requires $200 deposit, and 50% is returned if program is completed (if student completes showcase)</span>
                                             </li>
                                             <li className="mb-3 d-flex align-items-start text-start">
                                                 <span className="text-success me-3 fw-bold">✓</span>
@@ -90,7 +91,7 @@ function ComputerScienceProgram() {
                         </Card>
 
                         <Card className="shadow-lg border-0 mb-5">
-                            <Card.Body className="p-5">
+                            <Card.Body className="p-lg-5 p-3">
                                 <h2 className="text-dark mb-4 fw-bold">How to Get Started</h2>
                                 <ul className="list-unstyled text-start">
                                     <li className="mb-3 d-flex align-items-start text-start">
@@ -115,7 +116,7 @@ function ComputerScienceProgram() {
                         </Card>
 
                         <Card className="shadow-lg border-0 mb-5">
-                            <Card.Body className="p-5">
+                            <Card.Body className="p-lg-5 p-3">
                                 <Row>
                                     <Col md={8}>
                                         <h2 className="text-dark mb-4 fw-bold">Program Information</h2>
@@ -138,16 +139,12 @@ function ComputerScienceProgram() {
                                             </li>
                                             <li className="mb-3 d-flex align-items-start text-start">
                                                 <span className="text-dark me-3 fw-bold">•</span>
-                                                <span className="text-start">Program is hybrid, with virtual sessions coupled with in-person final presentation, laboratory, and build hour days</span>
-                                            </li>
-                                            <li className="mb-3 d-flex align-items-start text-start">
-                                                <span className="text-dark me-3 fw-bold">•</span>
                                                 <span className="text-start">Calendar of topics will be released</span>
                                             </li>
                                         </ul>
                                     </Col>
-                                    <Col md={4}>
-                                        <img src={people4} alt="Students Working on Projects" className="img-fluid rounded shadow" style={{height: '200px', width: '100%', objectFit: 'cover'}} />
+                                    <Col md={4} className="mt-3 mt-md-0">
+                                        <img src={people4} alt="Students Working on Projects" className="img-fluid rounded shadow w-100" style={{height: '200px', objectFit: 'cover'}} />
                                     </Col>
                                 </Row>
                             </Card.Body>
@@ -160,7 +157,7 @@ function ComputerScienceProgram() {
                         </div>
                     </Col>
                 </Row>
-            </Container>
+            </div>
         </>}/>
     </>);
 }

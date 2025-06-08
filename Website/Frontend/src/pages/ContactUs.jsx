@@ -9,12 +9,31 @@ function ContactUs() {
 
         <ContentBlock mt="0" mb="0" content={<>
             <p className="text-dark">Calendly not showing up? <a target="_blank" href="https://calendly.com/neetp287">Try this link instead</a></p>
-            <InlineWidget styles={{height: "100svh", width: "75swh", margin: "auto"}} url="https://calendly.com/neetp287" />
+            <div className="w-100" style={{margin: "auto"}}>
+                <InlineWidget 
+                    styles={{
+                        height: "100svh", 
+                        width: "100%", 
+                        margin: "auto"
+                    }} 
+                    url="https://calendly.com/neetp287" 
+                />
+            </div>
             <hr style={{border: "3px solid #ffffff"}} />
             <p className="text-center text-dark">OR try this:</p>
             <p className="text-dark">Google Form not showing up? <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScbnkakgMsgrxi6WXvvhyRI09yvtmidQjLvRjq-X2QzbzqxvQ/viewform?embedded=true">Try this link instead</a></p>
         </>} />
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbnkakgMsgrxi6WXvvhyRI09yvtmidQjLvRjq-X2QzbzqxvQ/viewform?embedded=true" className="m-auto" width="100%" height="500svh">Loading...</iframe>
+        
+        <div className="container-fluid">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLScbnkakgMsgrxi6WXvvhyRI09yvtmidQjLvRjq-X2QzbzqxvQ/viewform?embedded=true" 
+                className="w-100" 
+                style={{margin: "auto", minHeight: "500px"}}
+                title="Contact Form"
+            >
+                Loading...
+            </iframe>
+        </div>
     </>);
 }
 

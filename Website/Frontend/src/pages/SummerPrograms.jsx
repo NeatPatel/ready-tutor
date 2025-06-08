@@ -16,10 +16,11 @@ function SummerPrograms() {
             <p className="m-auto text-dark mb-2">Students Learn about the basics of their career pathway, and strides to take to stay ahead of the career game</p>
         </>}/>
 
-        <Container className="my-5">
-            <Row className="g-4">
-                <Col md={6}>
-                    <Card className="h-100 shadow-lg border-0" style={{minHeight: '60vh', display: 'flex'}}>
+        {/* Mobile-responsive container */}
+        <div className="container-fluid px-lg-5 px-md-3 px-2 my-5">
+            <Row className="g-4 justify-content-center">
+                <Col lg={6} className="d-flex">
+                    <Card className="h-100 shadow-lg border-0 flex-fill" style={{minHeight: '60vh', display: 'flex'}}>
                         <div style={{height: '200px', overflow: 'hidden', borderTopLeftRadius: '0.375rem', borderTopRightRadius: '0.375rem'}}>
                             <img src={compSci} alt="Computer Science Bootcamp" className="w-100 h-100" style={{objectFit: 'cover'}} />
                         </div>
@@ -55,13 +56,13 @@ function SummerPrograms() {
                             </div>
                             <div className="mt-auto text-center">
                                 <a className="btn btn-dark rounded-pill px-4 py-3 mb-3 fw-bold" href="/summer-programs/computer-science">Learn More</a>
-                                <p className="h4 text-success fw-bold mb-0">$250 per student</p>
+                                <p className="h4 text-success fw-bold mb-0">$200 per student</p>
                             </div>
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={6}>
-                    <Card className="h-100 shadow-lg border-0" style={{minHeight: '60vh', display: 'flex'}}>
+                <Col lg={6} className="d-flex">
+                    <Card className="h-100 shadow-lg border-0 flex-fill" style={{minHeight: '60vh', display: 'flex'}}>
                         <div style={{height: '200px', overflow: 'hidden', borderTopLeftRadius: '0.375rem', borderTopRightRadius: '0.375rem'}}>
                             <img src={people7} alt="Students Collaborating" className="w-100 h-100" style={{objectFit: 'cover'}} />
                         </div>
@@ -75,11 +76,11 @@ function SummerPrograms() {
                                     </li>
                                     <li className="mb-2 d-flex align-items-start">
                                         <span className="text-success me-2">✓</span>
-                                        <span>Topic Exposure of future Premed classes (i.e. Biology, Chemistry, Organic Chemistry, etc.)</span>
+                                        <span>Topic Exposure of future Premed classes</span>
                                     </li>
                                     <li className="mb-2 d-flex align-items-start">
                                         <span className="text-success me-2">✓</span>
-                                        <span>Basic exposure to the Premedical curriculum (including programs students should look into for the future as additional supplements)</span>
+                                        <span>Biology, Chemistry, Organic Chemistry, and more</span>
                                     </li>
                                     <li className="mb-2 d-flex align-items-start">
                                         <span className="text-success me-2">✓</span>
@@ -97,13 +98,13 @@ function SummerPrograms() {
                             </div>
                             <div className="mt-auto text-center">
                                 <a className="btn btn-dark rounded-pill px-4 py-3 mb-3 fw-bold" href="/summer-programs/pre-medical">Learn More</a>
-                                <p className="h4 text-success fw-bold mb-0">$250 per student</p>
+                                <p className="h4 text-success fw-bold mb-0">$200 per student</p>
                             </div>
                         </Card.Body>
                     </Card>
                 </Col>
             </Row>
-        </Container>
+        </div>
     </>);
 }
 

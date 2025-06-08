@@ -4,7 +4,7 @@ import ContentBlock from '../components/ContentBlock.jsx';
 import SplitContentBlock from '../components/SplitContentBlock.jsx';
 import TripleBlock from '../components/TripleBlock.jsx';
 
-import { Image } from 'react-bootstrap';
+import { Image, Container, Row, Col } from 'react-bootstrap';
 
 import neet from '../assets/neet.jpg';
 import kalena from '../assets/kalena.webp';
@@ -19,12 +19,19 @@ function MeetTheTeam() {
             <h1 className="display-2 text-dark">Meet The Team</h1>
         </>} />
 
-        <SplitContentBlock mt="10" mb="0" left={<>
-            <h1 className="display-6 text-dark">About The Team</h1>
-        </>} right={<>
-            <p className="text-start text-dark">
-            Our tutoring team consists of many hard working individuals who have come as far as getting into prestigious 4 year universities, and not only working as tutors, but as time managing student-teachers.</p>
-        </>} />
+        {/* About The Team Section - Responsive Columns */}
+        <Container className="my-5">
+            <Row className="g-4 align-items-center">
+                <Col md={4}>
+                    <h1 className="display-6 text-dark">About The Team</h1>
+                </Col>
+                <Col md={8}>
+                    <p className="text-start text-dark">
+                        Our tutoring team consists of many hard working individuals who have come as far as getting into prestigious 4 year universities, and not only working as tutors, but as time managing student-teachers.
+                    </p>
+                </Col>
+            </Row>
+        </Container>
 
         {/* Team Members Grid */}
         <section className="py-5">
