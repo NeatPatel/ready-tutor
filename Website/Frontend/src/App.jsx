@@ -17,7 +17,9 @@ import Home from './pages/Home.jsx';
 import Schools from './pages/Schools.jsx';
 import UCI_school from './pages/UCI_school.jsx';
 import FinalReviewSessions from './pages/FinalReviewSessions.jsx';
-//import SummerPrograms from './pages/SummerPrograms.jsx';
+import SummerPrograms from './pages/SummerPrograms.jsx';
+import PreMedicalProgram from './pages/PreMedicalProgram.jsx';
+import ComputerScienceProgram from './pages/ComputerScienceProgram.jsx';
 
 function App() {
   return (
@@ -38,9 +40,9 @@ function App() {
             <Route path="uci-school" element={<UCI_school />} />
             <Route path="not-found" element={<NotFound />} />
             <Route path="final-exam-sessions" element={<FinalReviewSessions />} />
-            {/* <Route path="summer-programs" element={<SummerPrograms />} /> */}
-            {/* <Route path="summer-programs/computer-science" element={<SummerPrograms />} /> */}
-            {/* <Route path="summer-programs/pre-medical" element={<SummerPrograms />} /> */}
+            <Route path="summer-programs" element={<SummerPrograms />} />
+            <Route path="summer-programs/computer-science" element={<ComputerScienceProgram />} />
+            <Route path="summer-programs/pre-medical" element={<PreMedicalProgram />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

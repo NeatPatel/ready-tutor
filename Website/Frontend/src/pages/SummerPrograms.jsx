@@ -2,7 +2,11 @@ import styles from './summerprograms.module.scss';
 
 import ContentBlock from '../components/ContentBlock.jsx';
 import SplitContentBlock from '../components/SplitContentBlock.jsx';
-import { Card, Button, Col } from 'react-bootstrap';
+import { Card, Button, Col, Row, Container } from 'react-bootstrap';
+
+// Import images
+import compSci from '../assets/comp-sci.jpg';
+import people7 from '../assets/people7.jpg';
 
 function SummerPrograms() {
     return (<>
@@ -12,25 +16,94 @@ function SummerPrograms() {
             <p className="m-auto text-dark mb-2">Students Learn about the basics of their career pathway, and strides to take to stay ahead of the career game</p>
         </>}/>
 
-        <ContentBlock mt='0' mb='10' content={<>
-            a
-        </>} />
-
-        <SplitContentBlock mt='0' mb='10' left={<>
-            <Button variant="outline-light">
-                <h2>Game Developer Bootcamp</h2>
-                <p>A 3 week virtual summer program for students of ALL ages. Students work in groups to develop multiplayer video games</p>
-                <button className="btn btn-dark rounded-pill px-4 py-3 m-auto mb-5 d-inline-block" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview">Learn More</button>
-                <p>FREE!</p>
-            </Button>
-        </>} right={<>
-            <Button variant="outline-light">
-                <h2>Python Summer Bootcamp</h2>
-                <p>Introductory Python course for middle school and high school students! Students work in small groups, and learn to develop their first video games in Python!</p>
-                <button className="btn btn-dark rounded-pill px-4 py-3 m-auto mb-5 d-inline-block" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMiJ8LKHU15qR80KdD3SKPFfYjnX1zzuDYd7ww-rvkk8FHQg/viewform?usp=preview">Learn More</button>
-                <p>$400</p>
-            </Button>
-        </>} />
+        <Container className="my-5">
+            <Row className="g-4">
+                <Col md={6}>
+                    <Card className="h-100 shadow-lg border-0" style={{minHeight: '60vh', display: 'flex'}}>
+                        <div style={{height: '200px', overflow: 'hidden', borderTopLeftRadius: '0.375rem', borderTopRightRadius: '0.375rem'}}>
+                            <img src={compSci} alt="Computer Science Bootcamp" className="w-100 h-100" style={{objectFit: 'cover'}} />
+                        </div>
+                        <Card.Body className="d-flex flex-column p-4 h-100">
+                            <h2 className="text-center text-dark mb-3 fw-bold">Computer Science Bootcamp</h2>
+                            <div className="mb-4 flex-grow-1">
+                                <ul className="list-unstyled text-start">
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Basic Web Development Skills (HTML/CSS/JavaScript)</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Advanced Frameworks exposure and experience (React, Bootstrap, Vite, Express.js)</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Project Outline and version control experience (git control systems, team coordination)</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Finding and solving REAL world problems</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Learning to utilize LLM integrated IDEs</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Final Project Showcase by students at UC Irvine</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="mt-auto text-center">
+                                <a className="btn btn-dark rounded-pill px-4 py-3 mb-3 fw-bold" href="/summer-programs/computer-science">Learn More</a>
+                                <p className="h4 text-success fw-bold mb-0">$250 per student</p>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={6}>
+                    <Card className="h-100 shadow-lg border-0" style={{minHeight: '60vh', display: 'flex'}}>
+                        <div style={{height: '200px', overflow: 'hidden', borderTopLeftRadius: '0.375rem', borderTopRightRadius: '0.375rem'}}>
+                            <img src={people7} alt="Students Collaborating" className="w-100 h-100" style={{objectFit: 'cover'}} />
+                        </div>
+                        <Card.Body className="d-flex flex-column p-4 h-100">
+                            <h2 className="text-center text-dark mb-3 fw-bold">Pre Medical Bootcamp</h2>
+                            <div className="mb-4 flex-grow-1">
+                                <ul className="list-unstyled text-start">
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>The Premedical Timeline</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Topic Exposure of future Premed classes (i.e. Biology, Chemistry, Organic Chemistry, etc.)</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Basic exposure to the Premedical curriculum (including programs students should look into for the future as additional supplements)</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Professional Lab Report Development Experience</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Hands-on Organic Chemistry Laboratory Experience</span>
+                                    </li>
+                                    <li className="mb-2 d-flex align-items-start">
+                                        <span className="text-success me-2">✓</span>
+                                        <span>Final Project Showcase by students at UC Irvine</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="mt-auto text-center">
+                                <a className="btn btn-dark rounded-pill px-4 py-3 mb-3 fw-bold" href="/summer-programs/pre-medical">Learn More</a>
+                                <p className="h4 text-success fw-bold mb-0">$250 per student</p>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
     </>);
 }
 

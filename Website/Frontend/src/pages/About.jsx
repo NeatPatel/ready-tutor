@@ -2,7 +2,7 @@ import styles from './about.module.scss';
 import {Card, ListGroup, Col, Row, ListGroupItem, Image, Button} from 'react-bootstrap';
 import SplitContentBlock from '../components/SplitContentBlock.jsx';
 import {Link} from 'react-router-dom';
-import waggImg from '../assets/wagg.jpg';
+import people from '../assets/people1.jpg';
 import ContentBlock from '../components/ContentBlock.jsx';
 import TripleBlock from '../components/TripleBlock.jsx';
 
@@ -100,7 +100,7 @@ function About() {
                 </Link>
               </div>
               <div className="col-md-6">
-                <Image src={waggImg} fluid rounded className="shadow-lg" />
+                <Image src={people} fluid rounded className="shadow-lg" />
               </div>
             </div>
           </div>

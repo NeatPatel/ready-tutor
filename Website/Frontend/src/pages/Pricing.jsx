@@ -90,15 +90,16 @@ function Pricing() {
                 <div className="card border-0 shadow-sm h-100 d-flex flex-column">
                   <div className="card-body p-4 d-flex flex-column">
                     <div className="mb-4">
-                      <h3 className="fs-5 fw-medium mb-1">Game Developer Bootcamp</h3>
-                      <p className="small text-muted">Virtual summer program</p>
+                      <h3 className="fs-5 fw-medium mb-1">Computer Science Bootcamp</h3>
+                      <p className="small text-muted">Summer programming intensive</p>
                     </div>
                     <div className="mb-4">
-                      <span className="display-6 fw-normal">FREE</span>
+                      <span className="display-6 fw-normal">$250</span>
+                      <span className="text-muted">/student</span>
                     </div>
-                    <p className="text-muted mb-3">A 3 week virtual summer program for students of ALL ages</p>
-                    <p className="text-muted mb-4 flex-grow-1">Developer bootcamp teaches students how to develop multiplayer video games</p>
-                    <Link to="/contact-us" className="mt-auto">
+                    <p className="text-muted mb-3">Comprehensive web development program covering HTML, CSS, JavaScript, React, and modern frameworks</p>
+                    <p className="text-muted mb-4 flex-grow-1">Students work on real-world projects and showcase their work at UC Irvine</p>
+                    <Link to="/summer-programs" className="mt-auto">
                       <button className="btn btn-outline-dark w-100 rounded-pill mb-2">
                         Learn More
                       </button>
@@ -111,17 +112,18 @@ function Pricing() {
                 <div className="card border-0 shadow-sm h-100 d-flex flex-column">
                   <div className="card-body p-4 d-flex flex-column">
                     <div className="mb-4">
-                      <h3 className="fs-5 fw-medium mb-1">Summer Python Bootcamp</h3>
-                      <p className="small text-muted">Introductory Python course</p>
+                      <h3 className="fs-5 fw-medium mb-1">Pre Medical Bootcamp</h3>
+                      <p className="small text-muted">Medical preparation program</p>
                     </div>
                     <div className="mb-4">
-                      <span className="display-6 fw-normal">$400</span>
+                      <span className="display-6 fw-normal">$250</span>
+                      <span className="text-muted">/student</span>
                     </div>
-                    <p className="text-muted mb-3">Introductory Python course for middle school and high school students!</p>
-                    <p className="text-muted mb-4 flex-grow-1">Students work in small groups, and learn to develop their first video games in Python!</p>
-                    <Link to="/contact-us" className="mt-auto">
+                    <p className="text-muted mb-3">Pre-medical timeline preparation with hands-on laboratory experience in Biology, Chemistry, and Organic Chemistry</p>
+                    <p className="text-muted mb-4 flex-grow-1">Professional lab report development and final project showcase at UC Irvine</p>
+                    <Link to="/summer-programs" className="mt-auto">
                       <button className="btn btn-outline-dark w-100 rounded-pill mb-2">
-                        Enroll Now
+                        Learn More
                       </button>
                     </Link>
                   </div>
@@ -137,6 +139,7 @@ function Pricing() {
                     </div>
                     <div className="mb-4">
                       <span className="display-6 fw-normal">$500</span>
+                      <span className="text-muted">/student</span>
                     </div>
                     <p className="text-muted mb-3">10 private hours of college application help for students to perfect their essays and applications</p>
                     <p className="text-muted mb-4 flex-grow-1">One-on-one sessions only for college applications</p>
@@ -165,6 +168,7 @@ function Pricing() {
                     </div>
                     <div className="mb-4">
                       <span className="display-5 fw-normal">$400</span>
+                      <span className="text-muted">/student</span>
                     </div>
                     <p className="text-muted mb-3">A 5 week intensive summer program IN PERSON for 2 sessions a week</p>
                     <p className="text-muted mb-4">Referring a friend to this program gets you a $100 discount!</p>

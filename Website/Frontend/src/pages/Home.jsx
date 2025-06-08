@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import MathBackground from '../components/MathBackground';
 
-import alex from '../assets/alex.png';
+import people from '../assets/people2.jpg';
 import jack from '../assets/jack.jpg';
-import jason from '../assets/jason.jpg';
+import alex from '../assets/alex.png';
 
 // AnimatedSubjectText Component
 function AnimatedSubjectText() {
@@ -361,7 +361,7 @@ function Home() {
                     </div>
                     <div className="col-md-6">
                       <img
-                        src={jason}
+                        src={alex}
                         alt="Schedule interface"
                         className="img-fluid rounded shadow-lg"
                         style={{ width: '500px', height: '400px', objectFit: 'cover', backgroundColor: '#f8f9fa' }}
@@ -413,7 +413,7 @@ function Home() {
                     </div>
                     <div className="col-md-6">
                       <img
-                        src={alex}
+                        src={people}
                         alt="Learning interface"
                         className="img-fluid rounded shadow-lg"
                         style={{ width: '500px', height: '400px', objectFit: 'cover', backgroundColor: '#f8f9fa' }}
