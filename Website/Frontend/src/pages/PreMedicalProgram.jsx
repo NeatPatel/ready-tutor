@@ -127,7 +127,7 @@ function PreMedicalProgram() {
                                             </li>
                                             <li className="mb-3 d-flex align-items-start text-start">
                                                 <span className="text-dark me-3 fw-bold">•</span>
-                                                <span className="text-start">Sessions are Weekly for 2 hours per session</span>
+                                                <span className="text-start">Sessions are twice a week for 1 hour per session on each weekend day (1 hour Saturday, 1 hour Sunday)</span>
                                             </li>
                                             <li className="mb-3 d-flex align-items-start text-start">
                                                 <span className="text-dark me-3 fw-bold">•</span>

@@ -76,11 +76,11 @@ function SummerPrograms() {
                                     </li>
                                     <li className="mb-2 d-flex align-items-start">
                                         <span className="text-success me-2">✓</span>
-                                        <span>Topic Exposure of future Premed classes</span>
+                                        <span>Topic exposure of future Premed classes (i.e. Biology, Chemistry, Organic Chemistry, etc.)</span>
                                     </li>
                                     <li className="mb-2 d-flex align-items-start">
                                         <span className="text-success me-2">✓</span>
-                                        <span>Biology, Chemistry, Organic Chemistry, and more</span>
+                                        <span>Basic exposure to the Premedical curriculum (including programs students should look into for the future as additional supplements)</span>
                                     </li>
                                     <li className="mb-2 d-flex align-items-start">
                                         <span className="text-success me-2">✓</span>
