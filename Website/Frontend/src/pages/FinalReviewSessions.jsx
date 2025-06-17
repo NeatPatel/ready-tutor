@@ -38,8 +38,8 @@ function FinalReviewSessions() {
                         // Process the cached data to handle virtual links in location field
                         const processedData = parsedData.map(item => ({
                             ...item,
-                            location: item.location && item.location.includes('http') 
-                                ? <a target="_blank" href={item.location}>Virtual, link here</a>
+                            location: item.link && item.link.trim() !== '' 
+                                ? <a target="_blank" href={item.link}>{item.location}</a>
                                 : item.location
                         }));
                         
@@ -67,8 +67,8 @@ function FinalReviewSessions() {
                 // Process the data to handle virtual links in location field
                 const processedData = data.map(item => ({
                     ...item,
-                    location: item.location && item.location.includes('http') 
-                        ? <a target="_blank" href={item.location}>Virtual, link here</a>
+                    location: item.link && item.link.trim() !== '' 
+                        ? <a target="_blank" href={item.link}>{item.location}</a>
                         : item.location
                 }));
                 
