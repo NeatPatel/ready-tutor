@@ -14,6 +14,7 @@ function SummerPrograms() {
             <h1 className= "m-auto display-1 text-dark">Summer Programs</h1>
             <p className="m-auto text-dark mt-5">Ready Tutor is offering Summer programs for High School Students to be taught by UC Irvine and Emory University Students</p>
             <p className="m-auto text-dark mb-2">Students Learn about the basics of their career pathway, and strides to take to stay ahead of the career game</p>
+            <a className="btn btn-dark rounded-pill px-4 py-3 mt-3 mb-1 fw-bold" href="/summer-programs/calendar">View Calendar</a>
         </>}/>
 
         {/* Mobile-responsive container */}
@@ -105,6 +106,8 @@ function SummerPrograms() {
                 </Col>
             </Row>
         </div>
+
+        <iframe src="https://calendar.google.com/calendar/embed?src=6adb5d3311d310946b0b8701ae612e30035e9f0d2db84019ba371ce3ad06ddf6%40group.calendar.google.com&ctz=America%2FLos_Angeles" className="my-5 w-100" width="800" height="600"></iframe>
     </>);
 }
 

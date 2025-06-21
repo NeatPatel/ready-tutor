@@ -20,6 +20,7 @@ import FinalReviewSessions from './pages/FinalReviewSessions.jsx';
 import SummerPrograms from './pages/SummerPrograms.jsx';
 import PreMedicalProgram from './pages/PreMedicalProgram.jsx';
 import ComputerScienceProgram from './pages/ComputerScienceProgram.jsx';
+import Calendar from './pages/Calendar.jsx';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="not-found" element={<NotFound />} />
             <Route path="final-exam-sessions" element={<FinalReviewSessions />} />
             <Route path="summer-programs" element={<SummerPrograms />} />
+            <Route path="summer-programs/calendar" element={<Calendar />} />
             <Route path="summer-programs/computer-science" element={<ComputerScienceProgram />} />
             <Route path="summer-programs/pre-medical" element={<PreMedicalProgram />} />
             <Route path="*" element={<NotFound />} />
