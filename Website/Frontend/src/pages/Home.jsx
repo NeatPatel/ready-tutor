@@ -435,41 +435,93 @@ function Home() {
             </p>
 
             <div className="row g-4 justify-content-center">
+              
+              {/* 10 Hour Package */}
               <div className="col-md-4">
-                <div className="card border-0 shadow-sm h-100">
+                <div className="card border-0 shadow-lg h-100 position-relative bg-white">
+                  <div className="position-absolute top-0 start-50 translate-middle">
+                    <span className="badge bg-danger text-white small py-1 px-3 rounded-pill">Best Value</span>
+                  </div>
                   <div className="card-body p-4">
                     <div className="mb-4">
-                      <h3 className="fs-5 fw-medium mb-1">Group Sessions</h3>
-                      <p className="small text-muted">For comprehensive Group help</p>
+                      <h3 className="fs-5 fw-medium mb-1">10 Hour Package</h3>
+                      <p className="small text-muted">For comprehensive one-on-one support</p>
                     </div>
                     <div className="mb-4">
-                      <span className="display-6 fw-normal">$20</span>
-                      <span className="text-muted">/hour each</span>
+                      <span className="display-6 fw-normal">$25</span>
+                      <span className="text-muted">/hour</span>
+                      <div className="small text-success mt-1">$250/package - Save $10 per hour!</div>
                     </div>
                     <ul className="list-unstyled mb-4">
                       <li className="d-flex align-items-start mb-2 small text-muted">
                         <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
                           <path d="M5 13l4 4L19 7" />
                         </svg>
-                        <span>Peer Collaboration</span>
+                        <span>10 hours of personalized tutoring</span>
                       </li>
                       <li className="d-flex align-items-start mb-2 small text-muted">
                         <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
                           <path d="M5 13l4 4L19 7" />
                         </svg>
-                        <span>Dedicated tutor</span>
+                        <span>Consistent tutor availability</span>
                       </li>
                       <li className="d-flex align-items-start mb-2 small text-muted">
                         <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
                           <path d="M5 13l4 4L19 7" />
                         </svg>
-                        <span>Exam prep sessions</span>
+                        <span>Perfect for semester support</span>
                       </li>
                       <li className="d-flex align-items-start small text-muted">
                         <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
                           <path d="M5 13l4 4L19 7" />
                         </svg>
-                        <span>Cheaper as you add more students</span>
+                        <span>Best savings per hour</span>
+                      </li>
+                    </ul>
+                    <Link to="/contact-us"><button className="btn btn-dark w-100 rounded-pill">
+                      Choose plan
+                    </button></Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* 5 Hour Package */}
+              <div className="col-md-4">
+                <div className="card border-0 shadow-sm h-100">
+                  <div className="card-body p-4">
+                    <div className="mb-4">
+                      <h3 className="fs-5 fw-medium mb-1">5 Hour Package</h3>
+                      <p className="small text-muted">For focused exam preparation</p>
+                    </div>
+                    <div className="mb-4">
+                      <span className="display-6 fw-normal">$30</span>
+                      <span className="text-muted">/hour</span>
+                      <div className="small text-success mt-1">$150/package - Save $5 per hour!</div>
+                    </div>
+                    <ul className="list-unstyled mb-4">
+                      <li className="d-flex align-items-start mb-2 small text-muted">
+                        <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
+                          <path d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>5 hours of intensive tutoring</span>
+                      </li>
+                      <li className="d-flex align-items-start mb-2 small text-muted">
+                        <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
+                          <path d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Targeted subject mastery</span>
+                      </li>
+                      <li className="d-flex align-items-start mb-2 small text-muted">
+                        <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
+                          <path d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Great for exam prep</span>
+                      </li>
+                      <li className="d-flex align-items-start small text-muted">
+                        <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
+                          <path d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Focused learning sessions</span>
                       </li>
                     </ul>
                     <Link to="/contact-us"><button className="btn btn-outline-dark w-100 rounded-pill">
@@ -479,60 +531,16 @@ function Home() {
                 </div>
               </div>
 
-              <div className="col-md-4">
-                <div className="card border-0 shadow-lg h-100 position-relative bg-white">
-                  <div className="position-absolute top-0 start-50 translate-middle">
-                    <span className="badge bg-danger text-white small py-1 px-3 rounded-pill">Popular</span>
-                  </div>
-                  <div className="card-body p-4">
-                    <div className="mb-4">
-                      <h3 className="fs-5 fw-medium mb-1">One on One</h3>
-                      <p className="small text-muted">For regular one on one support</p>
-                    </div>
-                    <div className="mb-4">
-                      <span className="display-6 fw-normal">$30</span>
-                      <span className="text-muted">/hour</span>
-                    </div>
-                    <ul className="list-unstyled mb-4">
-                      <li className="d-flex align-items-start mb-2 small text-muted">
-                        <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
-                          <path d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span>Unlimited hours</span>
-                      </li>
-                      <li className="d-flex align-items-start mb-2 small text-muted">
-                        <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
-                          <path d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span>Same tutor availability</span>
-                      </li>
-                      <li className="d-flex align-items-start mb-2 small text-muted">
-                        <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
-                          <path d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span>Personalized sessions</span>
-                      </li>
-                      <li className="d-flex align-items-start small text-muted">
-                        <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
-                          <path d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span>Priority scheduling</span>
-                      </li>
-                    </ul>
-                    <Link to="/contact-us"><button className="btn btn-dark w-100 rounded-pill">Choose plan</button></Link>
-                  </div>
-                </div>
-              </div>
-
+              {/* Money Back Guarantee */}
               <div className="col-md-4">
                 <div className="card border-0 shadow-sm h-100">
                   <div className="card-body p-4">
                     <div className="mb-4">
                       <h3 className="fs-5 fw-medium mb-1">Money Back Guarantee</h3>
-                      <p className="small text-muted">For occasional help</p>
+                      <p className="small text-muted">For high-stakes exam preparation</p>
                     </div>
                     <div className="mb-4">
-                      <span className="display-6 fw-normal">$40</span>
+                      <span className="display-6 fw-normal">$50</span>
                       <span className="text-muted">/hour</span>
                     </div>
                     <ul className="list-unstyled mb-4">
@@ -540,19 +548,19 @@ function Home() {
                         <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
                           <path d="M5 13l4 4L19 7" />
                         </svg>
-                        <span>Pass your class or get your money back</span>
+                        <span>Pass your exams or get money back</span>
                       </li>
                       <li className="d-flex align-items-start mb-2 small text-muted">
                         <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
                           <path d="M5 13l4 4L19 7" />
                         </svg>
-                        <span>One-time booking</span>
+                        <span>Premium tutoring service</span>
                       </li>
                       <li className="d-flex align-items-start mb-2 small text-muted">
                         <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
                           <path d="M5 13l4 4L19 7" />
                         </svg>
-                        <span>No financial stress</span>
+                        <span>Risk-free learning</span>
                       </li>
                       <li className="d-flex align-items-start small text-muted">
                         <svg className="text-danger me-2 flex-shrink-0" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginTop: '2px' }}>
