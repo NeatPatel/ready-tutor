@@ -16,7 +16,7 @@ function ContactUs() {
             <div className="row g-0">
                 <div className="col-12">
                     <div className="px-3 px-md-4 px-lg-5 py-3">
-                        <p className="text-dark mb-3">Calendly not showing up? <a target="_blank" href="https://calendly.com/neetp287">Try this link instead</a></p>
+                        <p className="text-dark mb-3">Calendly not showing up? <a target="_blank" href="https://calendly.com/readytutor01">Try this link instead</a></p>
                     </div>
                     
                     {/* Calendly Widget - 100% width edge-to-edge on mobile */}
@@ -28,7 +28,7 @@ function ContactUs() {
                                 margin: "0",
                                 border: "none"
                             }} 
-                            url="https://calendly.com/neetp287" 
+                            url="https://calendly.com/readytutor01" 
                         />
                     </div>
                     
