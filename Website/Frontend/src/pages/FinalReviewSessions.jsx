@@ -2,7 +2,7 @@ import styles from './finalreviewsessions.module.scss';
 
 import ContentBlock from '../components/ContentBlock.jsx';
 import { Table, Button } from 'react-bootstrap';
-import { useState, useEffect } from 'react';
+import { useSheetData } from '../hooks/useSheetData.js';
 
 /*
     Update School Term every year
@@ -19,72 +19,18 @@ import { useState, useEffect } from 'react';
 */
 
 function FinalReviewSessions() {
-    const [ finalsInfo, setFinalsInfo ] = useState(null);
-    const [ loading, setLoading ] = useState(true);
-    const [ error, setError ] = useState(null);
+    // Data processing function to handle virtual links in location field
+    const processFinalsData = (data) => {
+        return data.map(item => ({
+            ...item,
+            location: item.link && item.link.trim() !== '' 
+                ? <a target="_blank" href={item.link}>{item.location}</a>
+                : item.location
+        }));
+    };
 
-    useEffect(() => {
-        const fetchFinalsData = async () => {
-            try {
-                setLoading(true);
-                setError(null);
-                
-                // Check if data exists in sessionStorage first
-                const cachedData = sessionStorage.getItem('finalReviewSessions');
-                if (cachedData) {
-                    try {
-                        const parsedData = JSON.parse(cachedData);
-                        
-                        // Process the cached data to handle virtual links in location field
-                        const processedData = parsedData.map(item => ({
-                            ...item,
-                            location: item.link && item.link.trim() !== '' 
-                                ? <a target="_blank" href={item.link}>{item.location}</a>
-                                : item.location
-                        }));
-                        
-                        setFinalsInfo(processedData);
-                        setLoading(false);
-                        return; // Exit early if we have cached data
-                    } catch (parseError) {
-                        console.warn('Error parsing cached data, fetching fresh data:', parseError);
-                        // Continue to API call if cached data is corrupted
-                    }
-                }
-                
-                // Fetch from API if no cached data or cached data is corrupted
-                const response = await fetch(import.meta.env.VITE_FINAL_REVIEW_API_URL);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                const data = await response.json();
-                
-                // Store raw data in sessionStorage for future use
-                sessionStorage.setItem('finalReviewSessions', JSON.stringify(data));
-                
-                // Process the data to handle virtual links in location field
-                const processedData = data.map(item => ({
-                    ...item,
-                    location: item.link && item.link.trim() !== '' 
-                        ? <a target="_blank" href={item.link}>{item.location}</a>
-                        : item.location
-                }));
-                
-                setFinalsInfo(processedData);
-            } catch (err) {
-                console.error('Error fetching finals data:', err);
-                setError(err.message);
-                // Fallback to empty array on error
-                setFinalsInfo([]);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchFinalsData();
-    }, []);
+    // Use the custom hook to fetch and process data
+    const { data: finalsInfo, loading, error } = useSheetData("FinalReviewData", processFinalsData);
 
     return <>
         <ContentBlock mt='25' mb='0' content={<>

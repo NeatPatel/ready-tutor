@@ -12,7 +12,79 @@ function Pricing() {
         <section className="py-5">
           <div className="container">
             <div className="row g-4 justify-content-center">
-              <div className="col-md-4">
+              
+              {/* 10 Hour Package */}
+              <div className="col-lg-4 col-md-6">
+                <div className="card border-0 shadow-lg h-100 position-relative bg-white d-flex flex-column">
+                  <div className="position-absolute top-0 start-50 translate-middle">
+                    <span className="badge bg-danger text-white small py-1 px-3 rounded-pill">Best Value</span>
+                  </div>
+                  <div className="card-body p-4 d-flex flex-column">
+                    <div className="mb-4">
+                      <h3 className="fs-5 fw-medium mb-1">10 Hour Package</h3>
+                      <p className="small text-muted">For comprehensive one-on-one support</p>
+                    </div>
+                    <div className="mb-4">
+                      <span className="display-6 fw-normal">$25</span>
+                      <span className="text-muted">/hour</span>
+                      <div className="small text-success mt-1">$250/package - Save $10 per hour!</div>
+                    </div>
+                    <p className="text-muted mb-3">10 hours of personalized tutoring sessions with customized help to optimize your learning experience!</p>
+                    <p className="text-muted mb-4 flex-grow-1">Perfect for students who need consistent, regular support throughout the semester.</p>
+                    <Link to="/contact-us" className="mt-auto">
+                      <button className="btn btn-dark w-100 rounded-pill mb-2">Choose plan</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* 5 Hour Package */}
+              <div className="col-lg-4 col-md-6">
+                <div className="card border-0 shadow-sm h-100 d-flex flex-column">
+                  <div className="card-body p-4 d-flex flex-column">
+                    <div className="mb-4">
+                      <h3 className="fs-5 fw-medium mb-1">5 Hour Package</h3>
+                      <p className="small text-muted">For focused exam preparation</p>
+                    </div>
+                    <div className="mb-4">
+                      <span className="display-6 fw-normal">$30</span>
+                      <span className="text-muted">/hour</span>
+                      <div className="small text-success mt-1">$150/package - Save $5 per hour!</div>
+                    </div>
+                    <p className="text-muted mb-3">5 hours of intensive tutoring sessions perfect for targeted exam preparation or subject mastery.</p>
+                    <p className="text-muted mb-4 flex-grow-1">Great for students who need focused help on specific topics or upcoming exams.</p>
+                    <Link to="/contact-us" className="mt-auto">
+                      <button className="btn btn-outline-dark w-100 rounded-pill mb-2">Choose plan</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Money Back Guarantee */}
+              <div className="col-lg-4 col-md-6">
+                <div className="card border-0 shadow-sm h-100 d-flex flex-column">
+                  <div className="card-body p-4 d-flex flex-column">
+                    <div className="mb-4">
+                      <h3 className="fs-5 fw-medium mb-1"><b>Money Back Guarantee</b></h3>
+                      <p className="small text-muted">For high-stakes exam preparation</p>
+                    </div>
+                    <div className="mb-4">
+                      <span className="display-6 fw-normal">$50</span>
+                      <span className="text-muted">/hour</span>
+                    </div>
+                    <p className="text-muted mb-3">Pass your exams, or get your money 100% back!</p>
+                    <p className="text-muted mb-4 flex-grow-1"><Link to="/pricing/deals">more information</Link></p>
+                    <Link to="/contact-us" className="mt-auto">
+                      <button className="btn btn-outline-dark w-100 rounded-pill mb-2">
+                        Get started
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Group Sessions */}
+              <div className="col-lg-4 col-md-6">
                 <div className="card border-0 shadow-sm h-100 d-flex flex-column">
                   <div className="card-body p-4 d-flex flex-column">
                     <div className="mb-4">
@@ -20,7 +92,7 @@ function Pricing() {
                       <p className="small text-muted">For comprehensive Group help</p>
                     </div>
                     <div className="mb-4">
-                      <span className="display-6 fw-normal">&lt;$20</span>
+                      <span className="display-6 fw-normal">&lt;$25</span>
                       <span className="text-muted">/hour each</span>
                     </div>
                     <p className="text-muted mb-3">Come with a group of 2 or more people for help in your subject matter today!</p>
@@ -34,50 +106,27 @@ function Pricing() {
                 </div>
               </div>
 
-              <div className="col-md-4">
-                <div className="card border-0 shadow-lg h-100 position-relative bg-white d-flex flex-column">
-                  <div className="position-absolute top-0 start-50 translate-middle">
-                    <span className="badge bg-danger text-white small py-1 px-3 rounded-pill">Popular</span>
-                  </div>
+              {/* Pay as you go */}
+              <div className="col-lg-4 col-md-6">
+                <div className="card border-0 shadow-sm h-100 d-flex flex-column">
                   <div className="card-body p-4 d-flex flex-column">
                     <div className="mb-4">
-                      <h3 className="fs-5 fw-medium mb-1">One on One</h3>
+                      <h3 className="fs-5 fw-medium mb-1">Pay as you go</h3>
                       <p className="small text-muted">For regular one on one support</p>
                     </div>
                     <div className="mb-4">
-                      <span className="display-6 fw-normal">$30</span>
+                      <span className="display-6 fw-normal">$35</span>
                       <span className="text-muted">/hour</span>
                     </div>
                     <p className="text-muted mb-3">A personal tutoring session with customized help to optimize your experience!</p>
-                    <p className="text-muted mb-4 flex-grow-1">We provide a flat fee of $30 per hour to help high school or college students alike!</p>
+                    <p className="text-muted mb-4 flex-grow-1">We provide a flat fee of $35 per hour to help high school or college students alike!</p>
                     <Link to="/contact-us" className="mt-auto">
-                      <button className="btn btn-dark w-100 rounded-pill mb-2">Choose plan</button>
+                      <button className="btn btn-outline-dark w-100 rounded-pill mb-2">Choose plan</button>
                     </Link>
                   </div>
                 </div>
               </div>
 
-              <div className="col-md-4">
-                <div className="card border-0 shadow-sm h-100 d-flex flex-column">
-                  <div className="card-body p-4 d-flex flex-column">
-                    <div className="mb-4">
-                      <h3 className="fs-5 fw-medium mb-1"><b>Money Back Guarantee</b></h3>
-                      <p className="small text-muted">For occasional help</p>
-                    </div>
-                    <div className="mb-4">
-                      <span className="display-6 fw-normal">$40</span>
-                      <span className="text-muted">/hour</span>
-                    </div>
-                    <p className="text-muted mb-3">Pass your exams, or get your money 100% back!</p>
-                    <p className="text-muted mb-4 flex-grow-1"><Link to="/pricing/deals">more information</Link></p>
-                    <Link to="/contact-us" className="mt-auto">
-                      <button className="btn btn-outline-dark w-100 rounded-pill mb-2">
-                        Get started
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
